@@ -2775,14 +2775,14 @@
 						}
 					</style>
 
-					let imageUrl = "/wp-content/uploads/2023/03/foguinho.gif";
-					setTimeout(function () {
-					var el = document.getElementsByClassName("elementor-progress-bar")[0];
-					if (el) {
-					el.insertAdjacentHTML('beforeend', `<img decoding="async" src="${imageUrl}"
-						class="elementor-progress-bar-image" alt="Animação de carregamento" />`);
-					}
-					}, 100);
+					<script>
+						let imageUrl = "/wp-content/uploads/2023/03/foguinho.gif";
+						setTimeout(function () {
+							var el = document.getElementsByClassName("elementor-progress-bar")[0];
+							if (el) {
+								el.insertAdjacentHTML('beforeend', `<img decoding="async" src="${imageUrl}" class="elementor-progress-bar-image" alt="Animação de carregamento" />`);
+							}
+						}, 100);
 					</script>
 
 				</div>
@@ -2898,6 +2898,7 @@
 
 
 
+	<script src="js/counter-fix.js"></script>
 </body>
 
 </html><!-- Page cached by LiteSpeed Cache 7.6.2 on 2026-01-08 06:52:29 -->
