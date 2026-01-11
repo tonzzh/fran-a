@@ -1,0 +1,2901 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<title>700 Recettes ZÉRO</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="max-image-preview:large">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
+		img:is([sizes="auto" i], [sizes^="auto," i]) {
+			contain-intrinsic-size: 3000px 1500px
+		}
+	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;600&display=swap"
+		rel="stylesheet">
+	<style id="theme-overrides">
+		:root {
+			/* Premium Palette: Sage Green, Cream, Terracotta */
+			--wp--preset--color--base: #F9F7F2;
+			/* Cream Background */
+			--wp--preset--color--contrast: #2C3333;
+			/* Dark Charcoal Text */
+			--wp--preset--color--primary: #264D3B;
+			/* Deep Forest Green */
+			--wp--preset--color--accent: #C05621;
+			/* Terracotta */
+			--wp--preset--color--secondary: #A4B494;
+			/* Sage */
+
+			/* Override Existing Gradients to be softer/greener */
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, #264D3B 0%, #A4B494 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, #1a2f24 0%, #2C3333 100%);
+		}
+
+		body {
+			background-color: var(--wp--preset--color--base);
+			color: var(--wp--preset--color--contrast);
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		.elementor-heading-title {
+			font-family: 'Playfair Display', serif !important;
+			color: var(--wp--preset--color--primary);
+			letter-spacing: -0.02em;
+		}
+
+		/* Button Styling - Elegant & Premium */
+		.elementor-button {
+			background-color: var(--wp--preset--color--accent) !important;
+			border-radius: 4px !important;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 600;
+			transition: all 0.3s ease !important;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			animation: none !important;
+			/* Remove the "pulse" if it looks cheap */
+		}
+
+		.elementor-button:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 15px rgba(192, 86, 33, 0.3);
+			background-color: #A3461B !important;
+		}
+
+		/* Soften the "Purple" highlights if they exist in text */
+		span[style*="color: #ff00ff"],
+		span[style*="color: #800080"] {
+			color: var(--wp--preset--color--accent) !important;
+		}
+	</style>
+	<title>700 Recettes ZÉRO</title>
+
+
+
+
+	<style id="wp-block-library-inline-css">
+		:root {
+			--wp-admin-theme-color: #007cba;
+			--wp-admin-theme-color--rgb: 0, 124, 186;
+			--wp-admin-theme-color-darker-10: #006ba1;
+			--wp-admin-theme-color-darker-10--rgb: 0, 107, 161;
+			--wp-admin-theme-color-darker-20: #005a87;
+			--wp-admin-theme-color-darker-20--rgb: 0, 90, 135;
+			--wp-admin-border-width-focus: 2px;
+			--wp-block-synced-color: #7a00df;
+			--wp-block-synced-color--rgb: 122, 0, 223;
+			--wp-bound-block-color: var(--wp-block-synced-color)
+		}
+
+		@media (min-resolution:192dpi) {
+			:root {
+				--wp-admin-border-width-focus: 1.5px
+			}
+		}
+
+		.wp-element-button {
+			cursor: pointer
+		}
+
+		:root {
+			--wp--preset--font-size--normal: 16px;
+			--wp--preset--font-size--huge: 42px
+		}
+
+		:root .has-very-light-gray-background-color {
+			background-color: #eee
+		}
+
+		:root .has-very-dark-gray-background-color {
+			background-color: #313131
+		}
+
+		:root .has-very-light-gray-color {
+			color: #eee
+		}
+
+		:root .has-very-dark-gray-color {
+			color: #313131
+		}
+
+		:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background {
+			background: linear-gradient(135deg, #00d084, #0693e3)
+		}
+
+		:root .has-purple-crush-gradient-background {
+			background: linear-gradient(135deg, #34e2e4, #4721fb 50%, #ab1dfe)
+		}
+
+		:root .has-hazy-dawn-gradient-background {
+			background: linear-gradient(135deg, #faaca8, #dad0ec)
+		}
+
+		:root .has-subdued-olive-gradient-background {
+			background: linear-gradient(135deg, #fafae1, #67a671)
+		}
+
+		:root .has-atomic-cream-gradient-background {
+			background: linear-gradient(135deg, #fdd79a, #004a59)
+		}
+
+		:root .has-nightshade-gradient-background {
+			background: linear-gradient(135deg, #330968, #31cdcf)
+		}
+
+		:root .has-midnight-gradient-background {
+			background: linear-gradient(135deg, #020381, #2874fc)
+		}
+
+		.has-regular-font-size {
+			font-size: 1em
+		}
+
+		.has-larger-font-size {
+			font-size: 2.625em
+		}
+
+		.has-normal-font-size {
+			font-size: var(--wp--preset--font-size--normal)
+		}
+
+		.has-huge-font-size {
+			font-size: var(--wp--preset--font-size--huge)
+		}
+
+		.has-text-align-center {
+			text-align: center
+		}
+
+		.has-text-align-left {
+			text-align: left
+		}
+
+		.has-text-align-right {
+			text-align: right
+		}
+
+		#end-resizable-editor-section {
+			display: none
+		}
+
+		.aligncenter {
+			clear: both
+		}
+
+		.items-justified-left {
+			justify-content: flex-start
+		}
+
+		.items-justified-center {
+			justify-content: center
+		}
+
+		.items-justified-right {
+			justify-content: flex-end
+		}
+
+		.items-justified-space-between {
+			justify-content: space-between
+		}
+
+		.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+			word-wrap: normal !important
+		}
+
+		.screen-reader-text:focus {
+			background-color: #ddd;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000
+		}
+
+		html :where(.has-border-color) {
+			border-style: solid
+		}
+
+		html :where([style*=border-top-color]) {
+			border-top-style: solid
+		}
+
+		html :where([style*=border-right-color]) {
+			border-right-style: solid
+		}
+
+		html :where([style*=border-bottom-color]) {
+			border-bottom-style: solid
+		}
+
+		html :where([style*=border-left-color]) {
+			border-left-style: solid
+		}
+
+		html :where([style*=border-width]) {
+			border-style: solid
+		}
+
+		html :where([style*=border-top-width]) {
+			border-top-style: solid
+		}
+
+		html :where([style*=border-right-width]) {
+			border-right-style: solid
+		}
+
+		html :where([style*=border-bottom-width]) {
+			border-bottom-style: solid
+		}
+
+		html :where([style*=border-left-width]) {
+			border-left-style: solid
+		}
+
+		html :where(img[class*=wp-image-]) {
+			height: auto;
+			max-width: 100%
+		}
+
+		:where(figure) {
+			margin: 0 0 1em
+		}
+
+		html :where(.is-position-sticky) {
+			--wp-admin--admin-bar--position-offset: var(--wp-admin--admin-bar--height, 0px)
+		}
+
+		@media screen and (max-width:600px) {
+			html :where(.is-position-sticky) {
+				--wp-admin--admin-bar--position-offset: 0px
+			}
+		}
+	</style>
+	<style id="global-styles-inline-css">
+		:root {
+			--wp--preset--aspect-ratio--square: 1;
+			--wp--preset--aspect-ratio--4-3: 4/3;
+			--wp--preset--aspect-ratio--3-4: 3/4;
+			--wp--preset--aspect-ratio--3-2: 3/2;
+			--wp--preset--aspect-ratio--2-3: 2/3;
+			--wp--preset--aspect-ratio--16-9: 16/9;
+			--wp--preset--aspect-ratio--9-16: 9/16;
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--base: #FFFFFF;
+			--wp--preset--color--contrast: #111111;
+			--wp--preset--color--accent-1: #FFEE58;
+			--wp--preset--color--accent-2: #F6CFF4;
+			--wp--preset--color--accent-3: #503AA8;
+			--wp--preset--color--accent-4: #686868;
+			--wp--preset--color--accent-5: #FBFAF3;
+			--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 0.875rem;
+			--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);
+			--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);
+			--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);
+			--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);
+			--wp--preset--font-family--manrope: Manrope, sans-serif;
+			--wp--preset--font-family--fira-code: "Fira Code", monospace;
+			--wp--preset--spacing--20: 10px;
+			--wp--preset--spacing--30: 20px;
+			--wp--preset--spacing--40: 30px;
+			--wp--preset--spacing--50: clamp(30px, 5vw, 50px);
+			--wp--preset--spacing--60: clamp(30px, 7vw, 70px);
+			--wp--preset--spacing--70: clamp(50px, 7vw, 90px);
+			--wp--preset--spacing--80: clamp(70px, 10vw, 140px);
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+			--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+			--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+		}
+
+		:root {
+			--wp--style--global--content-size: 645px;
+			--wp--style--global--wide-size: 1340px;
+		}
+
+		:where(body) {
+			margin: 0;
+		}
+
+		.wp-site-blocks {
+			padding-top: var(--wp--style--root--padding-top);
+			padding-bottom: var(--wp--style--root--padding-bottom);
+		}
+
+		.has-global-padding {
+			padding-right: var(--wp--style--root--padding-right);
+			padding-left: var(--wp--style--root--padding-left);
+		}
+
+		.has-global-padding>.alignfull {
+			margin-right: calc(var(--wp--style--root--padding-right) * -1);
+			margin-left: calc(var(--wp--style--root--padding-left) * -1);
+		}
+
+		.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) {
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull))>.alignfull {
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.wp-site-blocks>.alignleft {
+			float: left;
+			margin-right: 2em;
+		}
+
+		.wp-site-blocks>.alignright {
+			float: right;
+			margin-left: 2em;
+		}
+
+		.wp-site-blocks>.aligncenter {
+			justify-content: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		:where(.wp-site-blocks)>* {
+			margin-block-start: 1.2rem;
+			margin-block-end: 0;
+		}
+
+		:where(.wp-site-blocks)> :first-child {
+			margin-block-start: 0;
+		}
+
+		:where(.wp-site-blocks)> :last-child {
+			margin-block-end: 0;
+		}
+
+		:root {
+			--wp--style--block-gap: 1.2rem;
+		}
+
+		:root :where(.is-layout-flow)> :first-child {
+			margin-block-start: 0;
+		}
+
+		:root :where(.is-layout-flow)> :last-child {
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-flow)>* {
+			margin-block-start: 1.2rem;
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-constrained)> :first-child {
+			margin-block-start: 0;
+		}
+
+		:root :where(.is-layout-constrained)> :last-child {
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-constrained)>* {
+			margin-block-start: 1.2rem;
+			margin-block-end: 0;
+		}
+
+		:root :where(.is-layout-flex) {
+			gap: 1.2rem;
+		}
+
+		:root :where(.is-layout-grid) {
+			gap: 1.2rem;
+		}
+
+		.is-layout-flow>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		.is-layout-flow>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		.is-layout-flow>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		.is-layout-constrained>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		.is-layout-constrained>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		.is-layout-constrained>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		.is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+			max-width: var(--wp--style--global--content-size);
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		.is-layout-constrained>.alignwide {
+			max-width: var(--wp--style--global--wide-size);
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		.is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		.is-layout-flex> :is(*, div) {
+			margin: 0;
+		}
+
+		body .is-layout-grid {
+			display: grid;
+		}
+
+		.is-layout-grid> :is(*, div) {
+			margin: 0;
+		}
+
+		body {
+			background-color: var(--wp--preset--color--base);
+			color: var(--wp--preset--color--contrast);
+			font-family: var(--wp--preset--font-family--manrope);
+			font-size: var(--wp--preset--font-size--large);
+			font-weight: 300;
+			letter-spacing: -0.1px;
+			line-height: 1.4;
+			--wp--style--root--padding-top: 0px;
+			--wp--style--root--padding-right: var(--wp--preset--spacing--50);
+			--wp--style--root--padding-bottom: 0px;
+			--wp--style--root--padding-left: var(--wp--preset--spacing--50);
+		}
+
+		a:where(:not(.wp-element-button)) {
+			color: currentColor;
+			text-decoration: underline;
+		}
+
+		:root :where(a:where(:not(.wp-element-button)):hover) {
+			text-decoration: none;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: 400;
+			letter-spacing: -0.1px;
+			line-height: 1.125;
+		}
+
+		h1 {
+			font-size: var(--wp--preset--font-size--xx-large);
+		}
+
+		h2 {
+			font-size: var(--wp--preset--font-size--x-large);
+		}
+
+		h3 {
+			font-size: var(--wp--preset--font-size--large);
+		}
+
+		h4 {
+			font-size: var(--wp--preset--font-size--medium);
+		}
+
+		h5 {
+			font-size: var(--wp--preset--font-size--small);
+			letter-spacing: 0.5px;
+		}
+
+		h6 {
+			font-size: var(--wp--preset--font-size--small);
+			font-weight: 700;
+			letter-spacing: 1.4px;
+			text-transform: uppercase;
+		}
+
+		:root :where(.wp-element-button, .wp-block-button__link) {
+			background-color: var(--wp--preset--color--contrast);
+			border-width: 0;
+			color: var(--wp--preset--color--base);
+			font-family: inherit;
+			font-size: var(--wp--preset--font-size--medium);
+			line-height: inherit;
+			padding-top: 1rem;
+			padding-right: 2.25rem;
+			padding-bottom: 1rem;
+			padding-left: 2.25rem;
+			text-decoration: none;
+		}
+
+		:root :where(.wp-element-button:hover, .wp-block-button__link:hover) {
+			background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);
+			border-color: transparent;
+			color: var(--wp--preset--color--base);
+		}
+
+		:root :where(.wp-element-button:focus, .wp-block-button__link:focus) {
+			outline-color: var(--wp--preset--color--accent-4);
+			outline-offset: 2px;
+		}
+
+		:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption) {
+			font-size: var(--wp--preset--font-size--small);
+			line-height: 1.4;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-base-color {
+			color: var(--wp--preset--color--base) !important;
+		}
+
+		.has-contrast-color {
+			color: var(--wp--preset--color--contrast) !important;
+		}
+
+		.has-accent-1-color {
+			color: var(--wp--preset--color--accent-1) !important;
+		}
+
+		.has-accent-2-color {
+			color: var(--wp--preset--color--accent-2) !important;
+		}
+
+		.has-accent-3-color {
+			color: var(--wp--preset--color--accent-3) !important;
+		}
+
+		.has-accent-4-color {
+			color: var(--wp--preset--color--accent-4) !important;
+		}
+
+		.has-accent-5-color {
+			color: var(--wp--preset--color--accent-5) !important;
+		}
+
+		.has-accent-6-color {
+			color: var(--wp--preset--color--accent-6) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-base-background-color {
+			background-color: var(--wp--preset--color--base) !important;
+		}
+
+		.has-contrast-background-color {
+			background-color: var(--wp--preset--color--contrast) !important;
+		}
+
+		.has-accent-1-background-color {
+			background-color: var(--wp--preset--color--accent-1) !important;
+		}
+
+		.has-accent-2-background-color {
+			background-color: var(--wp--preset--color--accent-2) !important;
+		}
+
+		.has-accent-3-background-color {
+			background-color: var(--wp--preset--color--accent-3) !important;
+		}
+
+		.has-accent-4-background-color {
+			background-color: var(--wp--preset--color--accent-4) !important;
+		}
+
+		.has-accent-5-background-color {
+			background-color: var(--wp--preset--color--accent-5) !important;
+		}
+
+		.has-accent-6-background-color {
+			background-color: var(--wp--preset--color--accent-6) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-base-border-color {
+			border-color: var(--wp--preset--color--base) !important;
+		}
+
+		.has-contrast-border-color {
+			border-color: var(--wp--preset--color--contrast) !important;
+		}
+
+		.has-accent-1-border-color {
+			border-color: var(--wp--preset--color--accent-1) !important;
+		}
+
+		.has-accent-2-border-color {
+			border-color: var(--wp--preset--color--accent-2) !important;
+		}
+
+		.has-accent-3-border-color {
+			border-color: var(--wp--preset--color--accent-3) !important;
+		}
+
+		.has-accent-4-border-color {
+			border-color: var(--wp--preset--color--accent-4) !important;
+		}
+
+		.has-accent-5-border-color {
+			border-color: var(--wp--preset--color--accent-5) !important;
+		}
+
+		.has-accent-6-border-color {
+			border-color: var(--wp--preset--color--accent-6) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		.has-xx-large-font-size {
+			font-size: var(--wp--preset--font-size--xx-large) !important;
+		}
+
+		.has-manrope-font-family {
+			font-family: var(--wp--preset--font-family--manrope) !important;
+		}
+
+		.has-fira-code-font-family {
+			font-family: var(--wp--preset--font-family--fira-code) !important;
+		}
+	</style>
+	<style id="wp-block-template-skip-link-inline-css">
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+	</style>
+	<link rel="stylesheet" id="hostinger-reach-subscription-block-css" href="css/subscription.css" media="all">
+	<link rel="stylesheet" id="twentytwentyfive-style-css" href="css/style.css" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="css/frontend.min_1.css" media="all">
+	<link rel="stylesheet" id="elementor-post-5-css" href="css/post-5.css" media="all">
+	<link rel="stylesheet" id="elementor-pro-css" href="css/frontend.min.css" media="all">
+	<link rel="stylesheet" id="widget-image-css" href="css/widget-image.min.css" media="all">
+	<link rel="stylesheet" id="widget-spacer-css" href="css/widget-spacer.min.css" media="all">
+	<link rel="stylesheet" id="e-shapes-css" href="css/shapes.min.css" media="all">
+	<link rel="stylesheet" id="widget-heading-css" href="css/widget-heading.min.css" media="all">
+	<link rel="stylesheet" id="widget-icon-list-css" href="css/widget-icon-list.min.css" media="all">
+	<link rel="stylesheet" id="widget-countdown-css" href="css/widget-countdown.min.css" media="all">
+	<link rel="stylesheet" id="widget-animated-headline-css" href="css/widget-animated-headline.min.css" media="all">
+	<link rel="stylesheet" id="widget-progress-css" href="css/widget-progress.min.css" media="all">
+	<link rel="stylesheet" id="widget-star-rating-css" href="css/widget-star-rating.min.css" media="all">
+	<link rel="stylesheet" id="widget-divider-css" href="css/widget-divider.min.css" media="all">
+	<link rel="stylesheet" id="widget-counter-css" href="css/widget-counter.min.css" media="all">
+	<link rel="stylesheet" id="elementor-post-7-css" href="css/post-7.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-roboto-css" href="css/roboto.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-robotoslab-css" href="css/robotoslab.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-ropasans-css" href="css/ropasans.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-montserrat-css" href="css/montserrat.css" media="all">
+	<link rel="stylesheet" id="elementor-gf-local-siemreap-css" href="css/siemreap.css" media="all">
+	<script src="js/jquery.min.js" id="jquery-core-js"></script>
+	<script src="js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+	<link rel="https://api.w.org/" href="#">
+	<link rel="alternate" title="JSON" type="application/json" href="#">
+
+	<meta name="generator" content="WordPress 6.8.3">
+
+	<link rel="shortlink" href="#">
+	<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="#">
+	<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="#">
+	<meta name="generator"
+		content="Elementor 3.33.4; features: e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+	<style>
+		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+		.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+			background-image: none !important;
+		}
+
+		@media screen and (max-height: 1024px) {
+
+			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+			.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+				background-image: none !important;
+			}
+		}
+
+		@media screen and (max-height: 640px) {
+
+			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+			.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+				background-image: none !important;
+			}
+		}
+	</style>
+	<style class="wp-fonts-local">
+		@font-face {
+			font-family: Manrope;
+			font-style: normal;
+			font-weight: 200 800;
+			font-display: fallback;
+			src: url('fonts/Manrope-VariableFont_wght.woff2') format('woff2');
+		}
+
+		@font-face {
+			font-family: "Fira Code";
+			font-style: normal;
+			font-weight: 300 700;
+			font-display: fallback;
+			src: url('fonts/FiraCode-VariableFont_wght.woff2') format('woff2');
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<script src="js/wp-emoji-release.min.js" defer=""></script>
+</head>
+
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+
+<!-- Meta Pixel Code -->
+<script>
+	window.pixelId = "67ebee8734d4adfd52db5bec";
+	var a = document.createElement("script");
+	a.setAttribute("async", "");
+	a.setAttribute("defer", "");
+	a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+	document.head.appendChild(a);
+</script>
+<!-- End Meta Pixel Code -->
+
+<body
+	class="wp-singular page-template page-template-elementor_canvas page page-id-7 wp-embed-responsive wp-theme-twentytwentyfive elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-7">
+	<div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7"
+		data-elementor-post-type="page">
+		<div class="elementor-element elementor-element-2c163a8f e-flex e-con-boxed e-con e-parent e-lazyloaded"
+			data-id="2c163a8f" data-element_type="container" data-settings="{"
+			background_background":"gradient","shape_divider_bottom":"mountains"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-shape elementor-shape-bottom" aria-hidden="true" data-negative="false">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+						<path class="elementor-shape-fill" opacity="0.33"
+							d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+						</path>
+						<path class="elementor-shape-fill" opacity="0.66"
+							d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+						</path>
+						<path class="elementor-shape-fill"
+							d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+						</path>
+					</svg>
+				</div>
+				<div class="elementor-element elementor-element-14a0e743 e-con-full e-flex e-con e-child"
+					data-id="14a0e743" data-element_type="container">
+					<div class="elementor-element elementor-element-55d9b074 elementor-widget elementor-widget-text-editor"
+						data-id="55d9b074" data-element_type="widget" data-widget_type="text-editor.default">
+						<p style="text-align: center;">APPRENDS DES RECETTES <span style="color: #ff00ff;">SIMPLES ET
+								DÉLICIEUSES</span> POUR NE <span style="color: #ff00ff;">PLUS JAMAIS TE PRIVER DE
+								RIEN</span>, ET RETROUVE LE PLAISIR DE MANGER UNE GRANDE VARIÉTÉ DE PLATS SAVOUREUX!</p>
+					</div>
+					<div class="elementor-element elementor-element-4cfe59 elementor-widget elementor-widget-image"
+						data-id="4cfe59" data-element_type="widget" data-widget_type="image.default">
+						<img fetchpriority="high" decoding="async" width="768" height="577"
+							src="images/MOCAP-GRANDE-4.png" class="attachment-large size-large wp-image-13" alt=""
+							srcset="images/MOCAP-GRANDE-4.png 768w, images/MOCAP-GRANDE-4-300x225.png 300w"
+							sizes="(max-width: 768px) 100vw, 768px">
+					</div>
+					<div class="elementor-element elementor-element-238d84b3 elementor-widget elementor-widget-spacer"
+						data-id="238d84b3" data-element_type="widget" data-widget_type="spacer.default">
+						<div class="elementor-spacer">
+							<div class="elementor-spacer-inner"></div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-3053a4f1 elementor-widget elementor-widget-spacer"
+						data-id="3053a4f1" data-element_type="widget" data-widget_type="spacer.default">
+						<div class="elementor-spacer">
+							<div class="elementor-spacer-inner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-3e117482 e-flex e-con-boxed e-con e-parent e-lazyloaded"
+			data-id="3e117482" data-element_type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4a37f7af elementor-widget elementor-widget-spacer"
+					data-id="4a37f7af" data-element_type="widget" data-widget_type="spacer.default">
+					<div class="elementor-spacer">
+						<div class="elementor-spacer-inner"></div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-61645902 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+					data-id="61645902" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">DÉCOUVREZ LES AVANTAGES D'UTILISER NOS
+						RECETTES</h2>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-b9af297 e-flex e-con-boxed e-con e-parent e-lazyloaded"
+			data-id="b9af297" data-element_type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5367cea7 e-flex e-con-boxed e-con e-child"
+					data-id="5367cea7" data-element_type="container">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-6f8a5b46 e-con-full e-flex e-con e-child"
+							data-id="6f8a5b46" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-141e70a5 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="141e70a5" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">NE T'INQUIÈTE PAS POUR TA
+									GLYCÉMIE</h2>
+							</div>
+							<div class="elementor-element elementor-element-2a48eea0 elementor-widget elementor-widget-text-editor"
+								data-id="2a48eea0" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Toutes les recettes ont été créées pour t’offrir une alimentation agréable et pleine
+									de saveurs, tout en t’aidant à contrôler ta glycémie.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-3837e34e e-con-full e-flex e-con e-child"
+							data-id="3837e34e" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-1ad4e0db elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="1ad4e0db" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">MANGE CE QUE TU AIMES.</h2>
+							</div>
+							<div class="elementor-element elementor-element-6f4095c7 elementor-widget elementor-widget-text-editor"
+								data-id="6f4095c7" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Tu auras des centaines d’options de recettes pour ne jamais te lasser de manger la
+									même chose. Le contenu a été conçu pour ceux qui souhaitent avoir une vie saine,
+									sans restrictions.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-768ff8a9 e-con-full e-flex e-con e-child"
+							data-id="768ff8a9" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-5edd32b elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="5edd32b" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">PROFITE D'UN SOMMEIL DE
+									QUALITÉ.</h2>
+							</div>
+							<div class="elementor-element elementor-element-5cc1e056 elementor-widget elementor-widget-text-editor"
+								data-id="5cc1e056" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>La mauvaise qualité du SOMMEIL est une conséquence du diabète. Les recettes aident à
+									neutraliser la NEUROPATHIE DIABÉTIQUE, permettant un sommeil PAISIBLE et DURABLE.
+								</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-7a047f9a e-con-full e-flex e-con e-child"
+							data-id="7a047f9a" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-2b196eaa elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="2b196eaa" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">RÉDUCTION DES NIVEAUX DE
+									STRESS.</h2>
+							</div>
+							<div class="elementor-element elementor-element-23cd7672 elementor-widget elementor-widget-text-editor"
+								data-id="23cd7672" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>En contrôlant le taux de sucre dans le sang et en maintenant le corps en équilibre,
+									l’esprit en profite également beaucoup, ce qui réduit considérablement la libération
+									d’hormones et le niveau de stress.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-1b250dfb e-flex e-con-boxed e-con e-parent" data-id="1b250dfb"
+			data-element_type="container" data-settings="{"
+			background_background":"classic","shape_divider_top":"mountains"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-shape elementor-shape-top" aria-hidden="true" data-negative="false">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+						<path class="elementor-shape-fill" opacity="0.33"
+							d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z">
+						</path>
+						<path class="elementor-shape-fill" opacity="0.66"
+							d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z">
+						</path>
+						<path class="elementor-shape-fill"
+							d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z">
+						</path>
+					</svg>
+				</div>
+				<div class="elementor-element elementor-element-3830863e elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="3830863e" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img decoding="async" width="465" height="465" src="images/Ellipse-1.svg"
+						class="attachment-large size-large wp-image-15" alt="">
+				</div>
+				<div class="elementor-element elementor-element-88184d8 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="88184d8" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img decoding="async" width="166" height="166" src="images/Ellipse-3.svg"
+						class="attachment-large size-large wp-image-16" alt="">
+				</div>
+				<div class="elementor-element elementor-element-7a281ea3 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="7a281ea3" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img decoding="async" width="166" height="166" src="images/Ellipse-3.svg"
+						class="attachment-large size-large wp-image-16" alt="">
+				</div>
+				<div class="elementor-element elementor-element-2a436b7c elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="2a436b7c" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img decoding="async" width="465" height="465" src="images/Ellipse-1.svg"
+						class="attachment-large size-large wp-image-15" alt="">
+				</div>
+				<div class="elementor-element elementor-element-8521fda elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="8521fda" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img loading="lazy" decoding="async" width="281" height="281" src="images/Ellipse-2.svg"
+						class="attachment-large size-large wp-image-17" alt="">
+				</div>
+				<div class="elementor-element elementor-element-6248cd9f elementor-widget elementor-widget-spacer"
+					data-id="6248cd9f" data-element_type="widget" data-widget_type="spacer.default">
+					<div class="elementor-spacer">
+						<div class="elementor-spacer-inner"></div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-3f6e1da8 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+					data-id="3f6e1da8" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">IL Y A PLUS DE 700 RECETTES POUR TOUS LES
+						REPAS DE TA JOURNÉE, QUI TE PROCURERONT UNE VIE BIEN PLUS SAVOUREUSE ET SAINE!</h2>
+				</div>
+				<div class="elementor-element elementor-element-135440b3 e-flex e-con-boxed e-con e-child"
+					data-id="135440b3" data-element_type="container" data-settings="{"
+					background_background":"gradient"}"="">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-3141a0bc elementor-widget__width-initial elementor-widget elementor-widget-image"
+							data-id="3141a0bc" data-element_type="widget" data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="383" height="285" src="images/imagem-1.webp"
+								class="attachment-large size-large wp-image-18" alt=""
+								srcset="images/imagem-1.webp 383w, images/imagem-1-300x223.webp 300w"
+								sizes="(max-width: 383px) 100vw, 383px">
+						</div>
+						<div class="elementor-element elementor-element-6f9b9f9b e-con-full e-flex e-con e-child"
+							data-id="6f9b9f9b" data-element_type="container">
+							<div class="elementor-element elementor-element-48ab8705 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="48ab8705" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">PETITS DÉJEUNERS ET
+									COLLATIONS</h2>
+							</div>
+							<div class="elementor-element elementor-element-7d2406b0 elementor-widget elementor-widget-text-editor"
+								data-id="7d2406b0" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Des recettes de petits déjeuners et collations que tu n’as jamais vues auparavant !
+									Préparation rapide avec des ingrédients pratiques et économiques !</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-17d08099 e-flex e-con-boxed e-con e-child"
+					data-id="17d08099" data-element_type="container" data-settings="{"
+					background_background":"gradient"}"="">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-347ad6b8 elementor-widget__width-initial elementor-widget elementor-widget-image"
+							data-id="347ad6b8" data-element_type="widget" data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="383" height="285" src="images/image-2.webp"
+								class="attachment-large size-large wp-image-19" alt=""
+								srcset="images/image-2.webp 383w, images/image-2-300x223.webp 300w"
+								sizes="(max-width: 383px) 100vw, 383px">
+						</div>
+						<div class="elementor-element elementor-element-7e0808f7 e-con-full e-flex e-con e-child"
+							data-id="7e0808f7" data-element_type="container">
+							<div class="elementor-element elementor-element-f4b8eca elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="f4b8eca" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">DÉJEUNER ET DÎNER.</h2>
+							</div>
+							<div class="elementor-element elementor-element-3b977d18 elementor-widget elementor-widget-text-editor"
+								data-id="3b977d18" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Profite des plats les plus variés et savoureux pour ton quotidien et pour des
+									occasions spéciales ! Préparés avec des ingrédients que tu as chez toi, ils
+									n’affecteront pas ton taux de sucre dans le sang.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-3df0379b e-flex e-con-boxed e-con e-child"
+					data-id="3df0379b" data-element_type="container" data-settings="{"
+					background_background":"gradient"}"="">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-7504bb67 elementor-widget__width-initial elementor-widget elementor-widget-image"
+							data-id="7504bb67" data-element_type="widget" data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="383" height="285" src="images/image-4.webp"
+								class="attachment-large size-large wp-image-20" alt=""
+								srcset="images/image-4.webp 383w, images/image-4-300x223.webp 300w"
+								sizes="(max-width: 383px) 100vw, 383px">
+						</div>
+						<div class="elementor-element elementor-element-3a9c093 e-con-full e-flex e-con e-child"
+							data-id="3a9c093" data-element_type="container">
+							<div class="elementor-element elementor-element-68fd0731 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="68fd0731" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">DESSERTS ET GOURMANDISES.
+								</h2>
+							</div>
+							<div class="elementor-element elementor-element-730d7382 elementor-widget elementor-widget-text-editor"
+								data-id="730d7382" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>De nombreuses options de desserts et gourmandises sans gluten et sans sucre pour que
+									tu puisses en manger autant de fois que tu veux, sans culpabilité!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-33ff2899 e-flex e-con-boxed e-con e-child"
+					data-id="33ff2899" data-element_type="container" data-settings="{"
+					background_background":"gradient"}"="">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-6c64c1d5 elementor-widget__width-initial elementor-widget elementor-widget-image"
+							data-id="6c64c1d5" data-element_type="widget" data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="383" height="285" src="images/image-5.webp"
+								class="attachment-large size-large wp-image-21" alt=""
+								srcset="images/image-5.webp 383w, images/image-5-300x223.webp 300w"
+								sizes="(max-width: 383px) 100vw, 383px">
+						</div>
+						<div class="elementor-element elementor-element-69623d2a e-con-full e-flex e-con e-child"
+							data-id="69623d2a" data-element_type="container">
+							<div class="elementor-element elementor-element-266a418c elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="266a418c" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">SOUPES ET CRÈMES ZÉRO.</h2>
+							</div>
+							<div class="elementor-element elementor-element-406ae87c elementor-widget elementor-widget-text-editor"
+								data-id="406ae87c" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Soupes, crèmes, bouillons, tout est préparé avec des ingrédients nutritifs et des
+									épices spéciales !</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-4a191ee3 e-flex e-con-boxed e-con e-child"
+					data-id="4a191ee3" data-element_type="container" data-settings="{"
+					background_background":"gradient"}"="">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-222bbaef elementor-widget__width-initial elementor-widget elementor-widget-image"
+							data-id="222bbaef" data-element_type="widget" data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="383" height="285" src="images/image-6.webp"
+								class="attachment-large size-large wp-image-22" alt=""
+								srcset="images/image-6.webp 383w, images/image-6-300x223.webp 300w"
+								sizes="(max-width: 383px) 100vw, 383px">
+						</div>
+						<div class="elementor-element elementor-element-1ff8b75f e-con-full e-flex e-con e-child"
+							data-id="1ff8b75f" data-element_type="container">
+							<div class="elementor-element elementor-element-3b692668 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="3b692668" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">SAUCES ET PÂTÉS ZÉRO</h2>
+							</div>
+							<div class="elementor-element elementor-element-5e3140fc elementor-widget elementor-widget-text-editor"
+								data-id="5e3140fc" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>¡Deliciosas salsas y patés que darán un toque especial y sabroso a tus platos! ¡tu
+									comida nunca volverá a ser la misma!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-1c188e03 e-flex e-con-boxed e-con e-child"
+					data-id="1c188e03" data-element_type="container" data-settings="{"
+					background_background":"gradient"}"="">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-7fdea695 elementor-widget__width-initial elementor-widget elementor-widget-image"
+							data-id="7fdea695" data-element_type="widget" data-widget_type="image.default">
+							<img loading="lazy" decoding="async" width="383" height="285" src="images/image-7.webp"
+								class="attachment-large size-large wp-image-23" alt=""
+								srcset="images/image-7.webp 383w, images/image-7-300x223.webp 300w"
+								sizes="(max-width: 383px) 100vw, 383px">
+						</div>
+						<div class="elementor-element elementor-element-4d5fb6bd e-con-full e-flex e-con e-child"
+							data-id="4d5fb6bd" data-element_type="container">
+							<div class="elementor-element elementor-element-26509d20 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="26509d20" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">FARINES MAISON ZÉRO</h2>
+							</div>
+							<div class="elementor-element elementor-element-c4173b9 elementor-widget elementor-widget-text-editor"
+								data-id="c4173b9" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Tout sans gluten et à faible indice glycémique, pour que tu puisses préparer des
+									tartes, des pains, des desserts et bien d’autres plats sans te soucier de ta
+									glycémie.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-651b02f5 e-flex e-con-boxed e-con e-parent" data-id="651b02f5"
+			data-element_type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c513a48 e-flex e-con-boxed e-con e-child"
+					data-id="c513a48" data-element_type="container">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-134b1eb7 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+							data-id="134b1eb7" data-element_type="widget" data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">TU CONNAIS CES SYMPTÔMES DU
+								DIABÈTE QUI PERTURBENT TELLEMENT TON QUOTIDIEN ? OUBLIE-LES ! OUBLIE AUSSI LES RÉGIMES
+								FADE ET RESTRICTIF QUI TE PRIVENT DE TOUT LE PLAISIR DE MANGER !</h2>
+						</div>
+						<div class="elementor-element elementor-element-2c0d22ef elementor-widget elementor-widget-text-editor"
+							data-id="2c0d22ef" data-element_type="widget" data-widget_type="text-editor.default">
+							<p>Nous savons à quel point il est difficile de vivre avec le diabète, une intolérance au
+								gluten et au lactose, un cholestérol élevé, et de devoir affronter des restrictions
+								chaque jour. Tu pourrais penser que c’est comme une peine à perpétuité, enfermée dans
+								des injections douloureuses et une routine où tu dois te priver des plaisirs de la
+								nourriture pour toujours. Mais nous sommes là pour te prouver le contraire ! Maintenant,
+								tu peux savourer une grande variété de plats délicieux tout en maintenant l’équilibre,
+								de sorte que des taux de glycémie élevés ne soient plus un problème pour toi.</p>
+							<p>Même si tu te sens perdu, anxieux et que tu ne comprends rien à la nutrition et à une
+								alimentation saine ! Mange bien, profite des saveurs des aliments, et garde le contrôle
+								de ta santé de manière naturelle !</p>
+							<p>Tu auras plus de <strong>700 recettes testées et approuvées</strong>, toutes <strong>sans
+									gluten et sans sucre</strong> pour chaque repas de ta journée !</p>
+							<p>Conçues pour offrir une alimentation équilibrée, savoureuse et pratique, elles ont pour
+								objectif de maintenir ta santé et l’équilibre hormonal de ton corps.</p>
+						</div>
+						<div class="elementor-element elementor-element-72e592c4 elementor-widget elementor-widget-heading"
+							data-id="72e592c4" data-element_type="widget" data-widget_type="heading.default">
+							<h2 class="elementor-heading-title elementor-size-default">Nous parlons de plats variés,
+								savoureux et riches ! Tu seras ravi de retrouver le plaisir de manger!<br></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-3f707453 e-flex e-con-boxed e-con e-parent" data-id="3f707453"
+			data-element_type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4b688d22 elementor-widget elementor-widget-html"
+					data-id="4b688d22" data-element_type="widget" data-widget_type="html.default">
+
+
+
+					<meta charset="UTF-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0">
+					<title>Carrossel de Bolos</title>
+					<style>
+						* {
+							margin: 0;
+							padding: 0;
+							box-sizing: border-box;
+						}
+
+						body {
+							font-family: 'Arial', sans-serif;
+							background: #f5f1eb;
+							overflow-x: hidden;
+						}
+
+						.carousel-container {
+							width: 100%;
+							height: 300px;
+							overflow: hidden;
+							position: relative;
+						}
+
+						.carousel-wrapper {
+							display: flex;
+							animation: scroll 45s linear infinite;
+							height: 100%;
+							will-change: transform;
+							/* Hardware acceleration */
+						}
+
+						.carousel-wrapper:hover {
+							animation-play-state: paused;
+						}
+
+						.carousel-slide {
+							min-width: 250px;
+							width: 250px;
+							height: 300px;
+							margin-right: 15px;
+							flex-shrink: 0;
+							border-radius: 10px;
+							overflow: hidden;
+							box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+						}
+
+						.carousel-slide img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							transition: transform 0.3s ease;
+						}
+
+						.carousel-slide:hover img {
+							transform: scale(1.05);
+						}
+
+						@keyframes scroll {
+							0% {
+								transform: translateX(0);
+							}
+
+							100% {
+								transform: translateX(calc(-250px * 14 - 210px));
+							}
+						}
+
+						@media (max-width: 768px) {
+							.carousel-container {
+								height: 250px;
+							}
+
+							.carousel-slide {
+								min-width: 200px;
+								width: 200px;
+								height: 250px;
+								margin-right: 10px;
+							}
+
+							@keyframes scroll {
+								0% {
+									transform: translateX(0);
+								}
+
+								100% {
+									transform: translateX(calc(-200px * 14 - 140px));
+								}
+							}
+						}
+					</style>
+
+
+					<div class="carousel-container">
+						<div class="carousel-wrapper">
+							<!-- Primeiro conjunto de imagens -->
+							<div class="carousel-slide">
+								<img decoding="async" src="images/3-1-1-1024x1024.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/650x650-9-1.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-2020-08-10T195758.402.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-28.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/7-1024x1024.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-2020-08-10T185444.518.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-29.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/1-3-1024x1024.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-2020-08-10T194656.424.png.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-2020-08-10T180408.751.png.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/650x650-10.png.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/650x650-14.png.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async"
+									src="images/bolo-gelado-de-leite-ninho-do-igor-rocha-1242x1080-1-1024x890.jpg.webp"
+									alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/5-1-1024x1024.jpg.webp" alt="Bolo">
+							</div>
+
+							<!-- Duplicação para loop infinito -->
+							<div class="carousel-slide">
+								<img decoding="async" src="images/3-1-1-1024x1024.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/650x650-9-1.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-2020-08-10T195758.402.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-28.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/7-1024x1024.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-2020-08-10T185444.518.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-29.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/1-3-1024x1024.jpg.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-2020-08-10T194656.424.png.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/Screenshot-2020-08-10T180408.751.png.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/650x650-10.png.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/650x650-14.png.webp" alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async"
+									src="images/bolo-gelado-de-leite-ninho-do-igor-rocha-1242x1080-1-1024x890.jpg.webp"
+									alt="Bolo">
+							</div>
+
+							<div class="carousel-slide">
+								<img decoding="async" src="images/5-1-1024x1024.jpg.webp" alt="Bolo">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="elementor-element elementor-element-272b2c36 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+					data-id="272b2c36" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">LES PLATS LES PLUS DÉLICIEUX EN VERSIONS
+					</h2>
+				</div>
+				<div class="elementor-element elementor-element-79e74111 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+					data-id="79e74111" data-element_type="widget" data-widget_type="icon-list.default">
+					<ul class="elementor-icon-list-items elementor-inline-items">
+						<li class="elementor-icon-list-item elementor-inline-item">
+							<span class="elementor-icon-list-icon">
+								<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+									</path>
+								</svg> </span>
+							<span class="elementor-icon-list-text">Faible en calories</span>
+						</li>
+						<li class="elementor-icon-list-item elementor-inline-item">
+							<span class="elementor-icon-list-icon">
+								<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+									</path>
+								</svg> </span>
+							<span class="elementor-icon-list-text">Sucre Zéro</span>
+						</li>
+						<li class="elementor-icon-list-item elementor-inline-item">
+							<span class="elementor-icon-list-icon">
+								<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+									</path>
+								</svg> </span>
+							<span class="elementor-icon-list-text">Zéro gluten</span>
+						</li>
+						<li class="elementor-icon-list-item elementor-inline-item">
+							<span class="elementor-icon-list-icon">
+								<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+									</path>
+								</svg> </span>
+							<span class="elementor-icon-list-text">Sans lactose</span>
+						</li>
+						<li class="elementor-icon-list-item elementor-inline-item">
+							<span class="elementor-icon-list-icon">
+								<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+									</path>
+								</svg> </span>
+							<span class="elementor-icon-list-text">Faible en glucides</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-36ac1e29 e-flex e-con-boxed e-con e-parent" data-id="36ac1e29"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-6b6cd0ce elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="6b6cd0ce" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img decoding="async" width="166" height="166" src="images/Ellipse-3.svg"
+						class="attachment-large size-large wp-image-16" alt="">
+				</div>
+				<div class="elementor-element elementor-element-589579 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="589579" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img decoding="async" width="465" height="465" src="images/Ellipse-1.svg"
+						class="attachment-large size-large wp-image-15" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-33478492 e-flex e-con-boxed e-con e-parent" data-id="33478492"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7603e6c3 e-flex e-con-boxed e-con e-child"
+					data-id="7603e6c3" data-element_type="container" id="oferta" data-settings="{"
+					background_background":"classic"}"="">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-7db49d4e e-con-full e-flex e-con e-child"
+							data-id="7db49d4e" data-element_type="container">
+							<div class="elementor-element elementor-element-517d6bf2 elementor-widget elementor-widget-heading"
+								data-id="517d6bf2" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">Ne manque pas cette
+									opportunité !
+									Des recettes délicieuses, sans sucre et sans gluten</h2>
+							</div>
+							<div class="elementor-element elementor-element-1dde40b0 elementor-widget elementor-widget-text-editor"
+								data-id="1dde40b0" data-element_type="widget" data-widget_type="text-editor.default">
+								<p style="text-align: center;"><span style="color: #333333;">Seulement pour aujourd’hui,
+										tu peux l’acquérir avec</span><strong style="color: #ff00ff;"> 50% DE RÉDUCTION,
+									</strong><span style="color: #333333;">soit </span><strong
+										style="color: #ff00ff;">un paiement unique </strong><span
+										style="color: #333333;">de € 17,00 avec un</span><strong
+										style="color: #ff00ff;"> accès immédiat, </strong></p>
+								<p style="text-align: center;">et tu auras également droit à toutes les mises à jour que
+									nous faisons chaque mois.</p>
+							</div>
+							<div class="elementor-element elementor-element-77fedb3c elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="77fedb3c" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">Promotion pour une durée
+									limitée</h2>
+							</div>
+							<div class="elementor-element elementor-element-3027853b elementor-widget__width-initial elementor-widget elementor-widget-heading"
+								data-id="3027853b" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">Plus de <b>50% de
+										réduction</b></h2>
+							</div>
+							<div class="elementor-element elementor-element-286de1e elementor-countdown--label-block elementor-widget elementor-widget-countdown"
+								data-id="286de1e" data-element_type="widget" data-widget_type="countdown.default">
+								<div class="elementor-widget-container">
+									<div data-evergreen-interval="7200" class="elementor-countdown-wrapper"
+										data-date="">
+										<div class="elementor-countdown-item"><span
+												class="elementor-countdown-digits elementor-countdown-days"></span>
+											<span class="elementor-countdown-label">JOURS </span>
+										</div>
+										<div class="elementor-countdown-item"><span
+												class="elementor-countdown-digits elementor-countdown-hours"></span>
+											<span class="elementor-countdown-label">HEURES</span>
+										</div>
+										<div class="elementor-countdown-item"><span
+												class="elementor-countdown-digits elementor-countdown-minutes"></span>
+											<span class="elementor-countdown-label">MINUTES </span>
+										</div>
+										<div class="elementor-countdown-item"><span
+												class="elementor-countdown-digits elementor-countdown-seconds"></span>
+											<span class="elementor-countdown-label">SECONDES</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-5f389613 elementor-widget elementor-widget-image"
+								data-id="5f389613" data-element_type="widget" data-widget_type="image.default">
+								<img loading="lazy" decoding="async" width="400" height="625"
+									src="images/Design-sem-nome-35.png" class="attachment-large size-large wp-image-24"
+									alt=""
+									srcset="images/Design-sem-nome-35.png 400w, images/Design-sem-nome-35-192x300.png 192w"
+									sizes="(max-width: 400px) 100vw, 400px">
+							</div>
+							<div class="elementor-element elementor-element-5e6ddbe2 elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline"
+								data-id="5e6ddbe2" data-element_type="widget" data-settings="{"
+								marker":"x","highlighted_text":"\u20ac=""
+								37,99","headline_style":"highlight","loop":"yes","highlight_animation_duration":1200,"highlight_iteration_delay":8000}"=""
+								data-widget_type="animated-headline.default">
+								<div class="elementor-widget-container">
+									<h3 class="elementor-headline">
+										<span class="elementor-headline-plain-text elementor-headline-text-wrapper">PRIX
+											NORMAL</span>
+										<span
+											class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+											<span
+												class="elementor-headline-dynamic-text elementor-headline-text-active">€
+												37,99</span>
+										</span>
+										<span
+											class="elementor-headline-plain-text elementor-headline-text-wrapper">OFFRE
+											UNIQUEMENT AUJOURD'HUI À :</span>
+									</h3>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-9802dd8 elementor-widget elementor-widget-heading"
+								data-id="9802dd8" data-element_type="widget" data-widget_type="heading.default">
+								<h2 class="elementor-heading-title elementor-size-default">€ 17 </h2>
+							</div>
+
+							<div class="elementor-element elementor-element-12b24e2c elementor-widget elementor-widget-spacer"
+								data-id="12b24e2c" data-element_type="widget" data-widget_type="spacer.default">
+								<div class="elementor-spacer">
+									<div class="elementor-spacer-inner"></div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-7f4fdc40 elementor-align-center pulse elementor-widget elementor-widget-button"
+								data-id="7f4fdc40" data-element_type="widget" data-widget_type="button.default">
+								<a class="elementor-button elementor-button-link elementor-size-sm"
+									href="https://pay.hotmart.com/I96820489B?checkoutMode=10">
+									<span class="elementor-button-content-wrapper">
+										<span class="elementor-button-text">OUI ! JE VEUX LE LIVRE DE CUISINE</span>
+									</span>
+								</a>
+							</div>
+							<div class="elementor-element elementor-element-741da7dc elementor-widget elementor-widget-image"
+								data-id="741da7dc" data-element_type="widget" data-widget_type="image.default">
+								<img loading="lazy" decoding="async" width="1024" height="80"
+									src="images/Selo-Menor-Cinza-Claro-1024x80.png"
+									class="attachment-large size-large wp-image-25" alt=""
+									srcset="images/Selo-Menor-Cinza-Claro-1024x80.png 1024w, images/Selo-Menor-Cinza-Claro-300x24.png 300w, images/Selo-Menor-Cinza-Claro-768x60.png 768w, images/Selo-Menor-Cinza-Claro.png 1186w"
+									sizes="(max-width: 1024px) 100vw, 1024px">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-47d500d5 e-flex e-con-boxed e-con e-parent" data-id="47d500d5"
+			data-element_type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2927171e elementor-widget elementor-widget-text-editor"
+					data-id="2927171e" data-element_type="widget" data-widget_type="text-editor.default">
+					<p style="text-align: center;"><span style="color: #800080;"><strong>Regarde ce que disent nos
+								clients.</strong></span></p>
+					<p style="text-align: center;"><span style="color: #000000;"><strong>NOTRE LIVRE EST UN SUCCÈS PARMI
+								LES PROFESSIONNELS DU DOMAINE ET LE GRAND PUBLIC.</strong></span></p>
+					<p style="text-align: center;"><span style="color: #000000;">Fantastique!</span></p>
+				</div>
+				<div class="elementor-element elementor-element-5d9af4ad elementor-widget elementor-widget-text-editor"
+					data-id="5d9af4ad" data-element_type="widget" data-widget_type="text-editor.default">
+					<p style="text-align: center;"><strong><span style="color: #000000;">4.9</span></strong></p>
+				</div>
+				<div class="elementor-element elementor-element-6de1de0c elementor-widget elementor-widget-text-editor"
+					data-id="6de1de0c" data-element_type="widget" data-widget_type="text-editor.default">
+					<p style="text-align: center;"><span style="color: #000000;"><span
+								class="fe5nidar khvhiq1o r5qsrrlp i5tg98hk f9ovudaz przvwfww gx1rr48f gfz4du6o r7fjleex nz2484kf svot0ezm dcnh1tix sxl192xd t3g6t33p"><span
+									class="mpj7bzys xzlurrtv">⭐</span></span><span
+								class="fe5nidar khvhiq1o r5qsrrlp i5tg98hk f9ovudaz przvwfww gx1rr48f gfz4du6o r7fjleex nz2484kf svot0ezm dcnh1tix sxl192xd t3g6t33p"><span
+									class="mpj7bzys xzlurrtv">⭐</span></span><span
+								class="fe5nidar khvhiq1o r5qsrrlp i5tg98hk f9ovudaz przvwfww gx1rr48f gfz4du6o r7fjleex nz2484kf svot0ezm dcnh1tix sxl192xd t3g6t33p"><span
+									class="mpj7bzys xzlurrtv">⭐</span></span><span
+								class="fe5nidar khvhiq1o r5qsrrlp i5tg98hk f9ovudaz przvwfww gx1rr48f gfz4du6o r7fjleex nz2484kf svot0ezm dcnh1tix sxl192xd t3g6t33p"><span
+									class="mpj7bzys xzlurrtv">⭐</span></span><span
+								class="fe5nidar khvhiq1o r5qsrrlp i5tg98hk f9ovudaz przvwfww gx1rr48f gfz4du6o r7fjleex nz2484kf svot0ezm dcnh1tix sxl192xd t3g6t33p"><span
+									class="mpj7bzys xzlurrtv">⭐</span></span><span
+								class="selectable-text copyable-text"> (1997)</span></span></p>
+				</div>
+				<div class="elementor-element elementor-element-30cf0489 elementor-widget elementor-widget-image"
+					data-id="30cf0489" data-element_type="widget" data-widget_type="image.default">
+					<img loading="lazy" decoding="async" width="481" height="182" src="images/FANTASTIC-3.png"
+						class="attachment-large size-large wp-image-26" alt=""
+						srcset="images/FANTASTIC-3.png 481w, images/FANTASTIC-3-300x114.png 300w"
+						sizes="(max-width: 481px) 100vw, 481px">
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-7a7fe7e7 e-flex e-con-boxed e-con e-parent" data-id="7a7fe7e7"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-52bb684a elementor-widget__width-initial elementor-widget elementor-widget-heading"
+					data-id="52bb684a" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">CEUX QUI ONT ACHETÉ ONT APPROUVÉ!</h2>
+				</div>
+				<div class="elementor-element elementor-element-5ac9f33d elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="5ac9f33d" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img decoding="async" width="166" height="166" src="images/Ellipse-3.svg"
+						class="attachment-large size-large wp-image-16" alt="">
+				</div>
+				<div class="elementor-element elementor-element-4b26f743 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="4b26f743" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img decoding="async" width="465" height="465" src="images/Ellipse-1.svg"
+						class="attachment-large size-large wp-image-15" alt="">
+				</div>
+				<div class="elementor-element elementor-element-5a677835 elementor-widget elementor-widget-text-editor"
+					data-id="5a677835" data-element_type="widget" data-widget_type="text-editor.default">
+					<p><strong><span style="color: #000000;">Notre livre est un succès parmi les professionnels du
+								secteur et le grand public. Voici quelques témoignages:</span></strong></p>
+				</div>
+				<div class="elementor-element elementor-element-7dc530b4 e-flex e-con-boxed e-con e-child"
+					data-id="7dc530b4" data-element_type="container">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-7d64bdb3 e-con-full e-flex e-con e-child"
+							data-id="7d64bdb3" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-139bcd85 elementor-widget elementor-widget-image"
+								data-id="139bcd85" data-element_type="widget" data-widget_type="image.default">
+								<img loading="lazy" decoding="async" width="377" height="500" src="images/Dep-01.webp"
+									class="attachment-large size-large wp-image-27" alt=""
+									srcset="images/Dep-01.webp 377w, images/Dep-01-226x300.webp 226w"
+									sizes="(max-width: 377px) 100vw, 377px">
+							</div>
+							<div class="elementor-element elementor-element-525533 e-flex e-con-boxed e-con e-child"
+								data-id="525533" data-element_type="container">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-34cae9ff e-con-full e-flex e-con e-child"
+										data-id="34cae9ff" data-element_type="container">
+										<div class="elementor-element elementor-element-5305e1df elementor-widget elementor-widget-image"
+											data-id="5305e1df" data-element_type="widget"
+											data-widget_type="image.default">
+											<img loading="lazy" decoding="async" width="683" height="683"
+												src="images/Pessoa-01.webp"
+												class="attachment-large size-large wp-image-28" alt=""
+												srcset="images/Pessoa-01.webp 683w, images/Pessoa-01-300x300.webp 300w, images/Pessoa-01-150x150.webp 150w"
+												sizes="(max-width: 683px) 100vw, 683px">
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-19375109 e-con-full e-flex e-con e-child"
+										data-id="19375109" data-element_type="container">
+										<div class="elementor-element elementor-element-d920ce5 elementor-widget elementor-widget-text-editor"
+											data-id="d920ce5" data-element_type="widget"
+											data-widget_type="text-editor.default">
+											<p>Fabrício Diaz</p>
+										</div>
+										<div class="elementor-element elementor-element-b2c87b7 elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating"
+											data-id="b2c87b7" data-element_type="widget"
+											data-widget_type="star-rating.default">
+											<div class="elementor-star-rating__wrapper">
+												<div class="elementor-star-rating" itemtype="http://schema.org/Rating"
+													itemscope="" itemprop="reviewRating">
+													<i class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i> <span
+														itemprop="ratingValue"
+														class="elementor-screen-only">Classificado como 5 de 5</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-da51b24 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+								data-id="da51b24" data-element_type="widget" data-widget_type="divider.default">
+								<div class="elementor-divider">
+									<span class="elementor-divider-separator">
+									</span>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-9bd085c elementor-widget elementor-widget-text-editor"
+								data-id="9bd085c" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Très heureux d’avoir reçu les recettes</p>
+							</div>
+							<div class="elementor-element elementor-element-4888350d elementor-widget elementor-widget-text-editor"
+								data-id="4888350d" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>“Ils sont fantastiques, il y a une grande variété de plats sucrés et salés. Mais ce
+									que j’ai préféré, ce sont les snacks sans gluten, cela a vraiment transformé mon
+									alimentation.”</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-10e740c8 e-con-full e-flex e-con e-child"
+							data-id="10e740c8" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-569a6e9c elementor-widget elementor-widget-image"
+								data-id="569a6e9c" data-element_type="widget" data-widget_type="image.default">
+								<img loading="lazy" decoding="async" width="377" height="500" src="images/Dep-02.webp"
+									class="attachment-large size-large wp-image-29" alt=""
+									srcset="images/Dep-02.webp 377w, images/Dep-02-226x300.webp 226w"
+									sizes="(max-width: 377px) 100vw, 377px">
+							</div>
+							<div class="elementor-element elementor-element-de2457d e-flex e-con-boxed e-con e-child"
+								data-id="de2457d" data-element_type="container">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-57fd6a5c e-con-full e-flex e-con e-child"
+										data-id="57fd6a5c" data-element_type="container">
+										<div class="elementor-element elementor-element-4bd18015 elementor-widget elementor-widget-image"
+											data-id="4bd18015" data-element_type="widget"
+											data-widget_type="image.default">
+											<img loading="lazy" decoding="async" width="683" height="683"
+												src="images/Pessoa-02.webp"
+												class="attachment-large size-large wp-image-30" alt=""
+												srcset="images/Pessoa-02.webp 683w, images/Pessoa-02-300x300.webp 300w, images/Pessoa-02-150x150.webp 150w"
+												sizes="(max-width: 683px) 100vw, 683px">
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-620f3c72 e-con-full e-flex e-con e-child"
+										data-id="620f3c72" data-element_type="container">
+										<div class="elementor-element elementor-element-3b3c54f0 elementor-widget elementor-widget-text-editor"
+											data-id="3b3c54f0" data-element_type="widget"
+											data-widget_type="text-editor.default">
+											<p>Mariana</p>
+										</div>
+										<div class="elementor-element elementor-element-1edbfb8b elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating"
+											data-id="1edbfb8b" data-element_type="widget"
+											data-widget_type="star-rating.default">
+											<div class="elementor-star-rating__wrapper">
+												<div class="elementor-star-rating" itemtype="http://schema.org/Rating"
+													itemscope="" itemprop="reviewRating">
+													<i class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i> <span
+														itemprop="ratingValue"
+														class="elementor-screen-only">Classificado como 5 de 5</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-6b68bc32 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+								data-id="6b68bc32" data-element_type="widget" data-widget_type="divider.default">
+								<div class="elementor-divider">
+									<span class="elementor-divider-separator">
+									</span>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-2d135396 elementor-widget elementor-widget-text-editor"
+								data-id="2d135396" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Tout est parfait.</p>
+							</div>
+							<div class="elementor-element elementor-element-39da116b elementor-widget elementor-widget-text-editor"
+								data-id="39da116b" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>“J’adore le contenu, il est très pratique et bien présenté. Le meilleur, ce sont les
+									desserts sans sucre ! J’ai tellement aimé que je l’ai recommandé à des amis. Merci
+									beaucoup pour le matériel et votre attention. Approuvé !”</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5b5ce003 e-con-full e-flex e-con e-child"
+							data-id="5b5ce003" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-1ac36299 elementor-widget elementor-widget-image"
+								data-id="1ac36299" data-element_type="widget" data-widget_type="image.default">
+								<img loading="lazy" decoding="async" width="377" height="500" src="images/Dep-03.webp"
+									class="attachment-large size-large wp-image-31" alt=""
+									srcset="images/Dep-03.webp 377w, images/Dep-03-226x300.webp 226w"
+									sizes="(max-width: 377px) 100vw, 377px">
+							</div>
+							<div class="elementor-element elementor-element-431602a7 e-flex e-con-boxed e-con e-child"
+								data-id="431602a7" data-element_type="container">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-63dca6d7 e-con-full e-flex e-con e-child"
+										data-id="63dca6d7" data-element_type="container">
+										<div class="elementor-element elementor-element-4778889b elementor-widget elementor-widget-image"
+											data-id="4778889b" data-element_type="widget"
+											data-widget_type="image.default">
+											<img loading="lazy" decoding="async" width="683" height="683"
+												src="images/Pessoa-03.webp"
+												class="attachment-large size-large wp-image-32" alt=""
+												srcset="images/Pessoa-03.webp 683w, images/Pessoa-03-300x300.webp 300w, images/Pessoa-03-150x150.webp 150w"
+												sizes="(max-width: 683px) 100vw, 683px">
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-132f285 e-con-full e-flex e-con e-child"
+										data-id="132f285" data-element_type="container">
+										<div class="elementor-element elementor-element-6ba25133 elementor-widget elementor-widget-text-editor"
+											data-id="6ba25133" data-element_type="widget"
+											data-widget_type="text-editor.default">
+											<p>Helena Santiago</p>
+										</div>
+										<div class="elementor-element elementor-element-6e3fd2dc elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating"
+											data-id="6e3fd2dc" data-element_type="widget"
+											data-widget_type="star-rating.default">
+											<div class="elementor-star-rating__wrapper">
+												<div class="elementor-star-rating" itemtype="http://schema.org/Rating"
+													itemscope="" itemprop="reviewRating">
+													<i class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i> <span
+														itemprop="ratingValue"
+														class="elementor-screen-only">Classificado como 5 de 5</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-15fc97c3 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+								data-id="15fc97c3" data-element_type="widget" data-widget_type="divider.default">
+								<div class="elementor-divider">
+									<span class="elementor-divider-separator">
+									</span>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-3c1dafb8 elementor-widget elementor-widget-text-editor"
+								data-id="3c1dafb8" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Le meilleur pour les diabétiques et les cœliaques.</p>
+							</div>
+							<div class="elementor-element elementor-element-391b4e11 elementor-widget elementor-widget-text-editor"
+								data-id="391b4e11" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>“Découvrir ce produit a été incroyable ! Je ne me souvenais plus à quel point c’était
+									bon de manger du pain tout juste sorti du four. Je suis cœliaque depuis cinq ans et
+									je n’ai jamais été douée en cuisine, mais après avoir acheté ce contenu, je me suis
+									remise à manger du pain savoureux et moelleux tous les jours au petit-déjeuner.
+									Merci à toute l’équipe.”</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-7143c758 e-con-full e-flex e-con e-child"
+							data-id="7143c758" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-2946bcdb elementor-widget elementor-widget-image"
+								data-id="2946bcdb" data-element_type="widget" data-widget_type="image.default">
+								<img loading="lazy" decoding="async" width="377" height="500" src="images/Dep-04.webp"
+									class="attachment-large size-large wp-image-33" alt=""
+									srcset="images/Dep-04.webp 377w, images/Dep-04-226x300.webp 226w"
+									sizes="(max-width: 377px) 100vw, 377px">
+							</div>
+							<div class="elementor-element elementor-element-2b1302e7 e-flex e-con-boxed e-con e-child"
+								data-id="2b1302e7" data-element_type="container">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-4139fcd1 e-con-full e-flex e-con e-child"
+										data-id="4139fcd1" data-element_type="container">
+										<div class="elementor-element elementor-element-62c177f7 elementor-widget elementor-widget-image"
+											data-id="62c177f7" data-element_type="widget"
+											data-widget_type="image.default">
+											<img loading="lazy" decoding="async" width="683" height="683"
+												src="images/Pessoa-04.webp"
+												class="attachment-large size-large wp-image-34" alt=""
+												srcset="images/Pessoa-04.webp 683w, images/Pessoa-04-300x300.webp 300w, images/Pessoa-04-150x150.webp 150w"
+												sizes="(max-width: 683px) 100vw, 683px">
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-25ac8084 e-con-full e-flex e-con e-child"
+										data-id="25ac8084" data-element_type="container">
+										<div class="elementor-element elementor-element-335a4c7d elementor-widget elementor-widget-text-editor"
+											data-id="335a4c7d" data-element_type="widget"
+											data-widget_type="text-editor.default">
+											<p>Maria Antonietta</p>
+										</div>
+										<div class="elementor-element elementor-element-36ed17da elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating"
+											data-id="36ed17da" data-element_type="widget"
+											data-widget_type="star-rating.default">
+											<div class="elementor-star-rating__wrapper">
+												<div class="elementor-star-rating" itemtype="http://schema.org/Rating"
+													itemscope="" itemprop="reviewRating">
+													<i class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i> <span
+														itemprop="ratingValue"
+														class="elementor-screen-only">Classificado como 5 de 5</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-5e35ccc0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+								data-id="5e35ccc0" data-element_type="widget" data-widget_type="divider.default">
+								<div class="elementor-divider">
+									<span class="elementor-divider-separator">
+									</span>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-1244e6e8 elementor-widget elementor-widget-text-editor"
+								data-id="1244e6e8" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Meilleur achat de l’année.</p>
+							</div>
+							<div class="elementor-element elementor-element-407080e0 elementor-widget elementor-widget-text-editor"
+								data-id="407080e0" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>“J’ai adoré les recettes, elles sont simples et faciles à préparer. Pour toutes
+									celles que j’ai faites jusqu’à présent, j’avais déjà les ingrédients chez moi. Elles
+									sont très pratiques. Je recommande, je suis très satisfaite. Je suis diabétique, et
+									ces recettes m’aident beaucoup à équilibrer mon taux de sucre dans le sang.”</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-7a0dd172 e-con-full e-flex e-con e-child"
+							data-id="7a0dd172" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-41a89a85 elementor-widget elementor-widget-image"
+								data-id="41a89a85" data-element_type="widget" data-widget_type="image.default">
+								<img loading="lazy" decoding="async" width="377" height="500" src="images/Dep-05.webp"
+									class="attachment-large size-large wp-image-35" alt=""
+									srcset="images/Dep-05.webp 377w, images/Dep-05-226x300.webp 226w"
+									sizes="(max-width: 377px) 100vw, 377px">
+							</div>
+							<div class="elementor-element elementor-element-60214bdd e-flex e-con-boxed e-con e-child"
+								data-id="60214bdd" data-element_type="container">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-a371fdc e-con-full e-flex e-con e-child"
+										data-id="a371fdc" data-element_type="container">
+										<div class="elementor-element elementor-element-6d62f76f elementor-widget elementor-widget-image"
+											data-id="6d62f76f" data-element_type="widget"
+											data-widget_type="image.default">
+											<img loading="lazy" decoding="async" width="683" height="683"
+												src="images/Pessoa-05.webp"
+												class="attachment-large size-large wp-image-36" alt=""
+												srcset="images/Pessoa-05.webp 683w, images/Pessoa-05-300x300.webp 300w, images/Pessoa-05-150x150.webp 150w"
+												sizes="(max-width: 683px) 100vw, 683px">
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-76cbdf81 e-con-full e-flex e-con e-child"
+										data-id="76cbdf81" data-element_type="container">
+										<div class="elementor-element elementor-element-4dfacd68 elementor-widget elementor-widget-text-editor"
+											data-id="4dfacd68" data-element_type="widget"
+											data-widget_type="text-editor.default">
+											<p>José Dirceu</p>
+										</div>
+										<div class="elementor-element elementor-element-4ea56c66 elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating"
+											data-id="4ea56c66" data-element_type="widget"
+											data-widget_type="star-rating.default">
+											<div class="elementor-star-rating__wrapper">
+												<div class="elementor-star-rating" itemtype="http://schema.org/Rating"
+													itemscope="" itemprop="reviewRating">
+													<i class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i> <span
+														itemprop="ratingValue"
+														class="elementor-screen-only">Classificado como 5 de 5</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-466a37d1 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+								data-id="466a37d1" data-element_type="widget" data-widget_type="divider.default">
+								<div class="elementor-divider">
+									<span class="elementor-divider-separator">
+									</span>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-2e5252a6 elementor-widget elementor-widget-text-editor"
+								data-id="2e5252a6" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="flex max-w-full flex-col flex-grow">
+									<div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words [.text-message+&]:mt-5"
+										dir="auto" data-message-author-role="assistant"
+										data-message-id="7e341fb5-66fc-419d-8d5c-9cd91f1de034">
+										<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+											<div class="markdown prose w-full break-words dark:prose-invert light">
+												<p>Recettes spectaculaires.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-52826477 elementor-widget elementor-widget-text-editor"
+								data-id="52826477" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>“Ma femme a vu l’annonce sur Facebook et nous avons décidé de l’acheter. Même moi,
+									qui ne suis pas cuisinier, j’en ai fait une et ça a marché, et j’ai vraiment envie
+									d’en faire d’autres, haha. J’ai payé par carte de crédit pour le recevoir
+									rapidement, tout s’est bien passé. Je recommande !”</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-8381a45 e-con-full e-flex e-con e-child"
+							data-id="8381a45" data-element_type="container" data-settings="{"
+							background_background":"classic"}"="">
+							<div class="elementor-element elementor-element-2a0e7373 elementor-widget elementor-widget-image"
+								data-id="2a0e7373" data-element_type="widget" data-widget_type="image.default">
+								<img loading="lazy" decoding="async" width="377" height="500" src="images/Dep-06.webp"
+									class="attachment-large size-large wp-image-37" alt=""
+									srcset="images/Dep-06.webp 377w, images/Dep-06-226x300.webp 226w"
+									sizes="(max-width: 377px) 100vw, 377px">
+							</div>
+							<div class="elementor-element elementor-element-c777f63 e-flex e-con-boxed e-con e-child"
+								data-id="c777f63" data-element_type="container">
+								<div class="e-con-inner">
+									<div class="elementor-element elementor-element-18a0fc2c e-con-full e-flex e-con e-child"
+										data-id="18a0fc2c" data-element_type="container">
+										<div class="elementor-element elementor-element-38fe16b8 elementor-widget elementor-widget-image"
+											data-id="38fe16b8" data-element_type="widget"
+											data-widget_type="image.default">
+											<img loading="lazy" decoding="async" width="683" height="683"
+												src="images/Pessoa-06.webp"
+												class="attachment-large size-large wp-image-38" alt=""
+												srcset="images/Pessoa-06.webp 683w, images/Pessoa-06-300x300.webp 300w, images/Pessoa-06-150x150.webp 150w"
+												sizes="(max-width: 683px) 100vw, 683px">
+										</div>
+									</div>
+									<div class="elementor-element elementor-element-5bb506a e-con-full e-flex e-con e-child"
+										data-id="5bb506a" data-element_type="container">
+										<div class="elementor-element elementor-element-35e6f042 elementor-widget elementor-widget-text-editor"
+											data-id="35e6f042" data-element_type="widget"
+											data-widget_type="text-editor.default">
+											<p>Laura Gonçalves</p>
+										</div>
+										<div class="elementor-element elementor-element-40492b90 elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating"
+											data-id="40492b90" data-element_type="widget"
+											data-widget_type="star-rating.default">
+											<div class="elementor-star-rating__wrapper">
+												<div class="elementor-star-rating" itemtype="http://schema.org/Rating"
+													itemscope="" itemprop="reviewRating">
+													<i class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i><i
+														class="elementor-star-full" aria-hidden="true"></i> <span
+														itemprop="ratingValue"
+														class="elementor-screen-only">Classificado como 5 de 5</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-6ca8e42e elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+								data-id="6ca8e42e" data-element_type="widget" data-widget_type="divider.default">
+								<div class="elementor-divider">
+									<span class="elementor-divider-separator">
+									</span>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-31221c17 elementor-widget elementor-widget-text-editor"
+								data-id="31221c17" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>Très bien élaboré.</p>
+							</div>
+							<div class="elementor-element elementor-element-198fb3de elementor-widget elementor-widget-text-editor"
+								data-id="198fb3de" data-element_type="widget" data-widget_type="text-editor.default">
+								<p>“J’ai adoré tout votre contenu. Cela a énormément apporté à ma vie. Cela a largement
+									dépassé mes attentes à tous les niveaux.”</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-633b4259 e-flex e-con-boxed e-con e-parent" data-id="633b4259"
+			data-element_type="container" data-settings="{" background_background":"gradient"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2c642f8 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+					data-id="2c642f8" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">SAVAIS-TU QU'IL EST DÉMONTRÉ PAR LES
+						MÉDECINS ET NUTRITIONNISTES QUE L'ALIMENTATION EST LA CLÉ DU CONTRÔLE TOTAL DU DIABÈTE ?</h2>
+				</div>
+				<div class="elementor-element elementor-element-1692c5d3 elementor-widget elementor-widget-text-editor"
+					data-id="1692c5d3" data-element_type="widget" data-widget_type="text-editor.default">
+					<p>Chaque année, le nombre de diabétiques qui découvrent ce secret et changent leur vie augmente !
+						Voici ce que disent les données des recherches les plus récentes:</p>
+				</div>
+				<div class="elementor-element elementor-element-5522cb38 e-flex e-con-boxed e-con e-child"
+					data-id="5522cb38" data-element_type="container">
+					<div class="e-con-inner">
+						<div class="elementor-element elementor-element-3dc66734 e-con-full e-flex e-con e-child"
+							data-id="3dc66734" data-element_type="container">
+							<div class="elementor-element elementor-element-20f2d9bb elementor-widget elementor-widget-counter"
+								data-id="20f2d9bb" data-element_type="widget" data-widget_type="counter.default">
+								<div class="elementor-counter">
+									<div class="elementor-counter-title">Plus de 7 millions de personnes dans le monde
+										ont perdu du poids et contrôlé leur diabète.</div>
+									<div class="elementor-counter-number-wrapper">
+										<span class="elementor-counter-number-prefix">+</span>
+										<span class="elementor-counter-number" data-duration="2000"
+											data-to-value="7000000" data-from-value="0" data-delimiter=".">0</span>
+										<span class="elementor-counter-number-suffix"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-1018e4a3 e-con-full e-flex e-con e-child"
+							data-id="1018e4a3" data-element_type="container">
+							<div class="elementor-element elementor-element-4c4553f0 elementor-widget elementor-widget-counter"
+								data-id="4c4553f0" data-element_type="widget" data-widget_type="counter.default">
+								<div class="elementor-counter">
+									<div class="elementor-counter-title">C'est un changement d'habitudes recommandé pour
+										ceux qui souhaitent contrôler leur diabète de manière naturelle et sans
+										médicaments.</div>
+									<div class="elementor-counter-number-wrapper">
+										<span class="elementor-counter-number-prefix">+</span>
+										<span class="elementor-counter-number" data-duration="2000" data-to-value="1000"
+											data-from-value="0" data-delimiter=".">0</span>
+										<span class="elementor-counter-number-suffix"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-4b3fa3aa e-con-full e-flex e-con e-child"
+							data-id="4b3fa3aa" data-element_type="container">
+							<div class="elementor-element elementor-element-14ddcf96 elementor-widget elementor-widget-counter"
+								data-id="14ddcf96" data-element_type="widget" data-widget_type="counter.default">
+								<div class="elementor-counter">
+									<div class="elementor-counter-title">6,257 millions de personnes dans le monde ont
+										déclaré avoir ressenti des dizaines de bienfaits simplement en changeant leur
+										alimentation.</div>
+									<div class="elementor-counter-number-wrapper">
+										<span class="elementor-counter-number-prefix">+</span>
+										<span class="elementor-counter-number" data-duration="2000"
+											data-to-value="6000000" data-from-value="0" data-delimiter=".">0</span>
+										<span class="elementor-counter-number-suffix"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-70b4a843 e-flex e-con-boxed e-con e-parent" data-id="70b4a843"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5111c082 elementor-widget elementor-widget-image"
+					data-id="5111c082" data-element_type="widget" data-widget_type="image.default">
+					<img loading="lazy" decoding="async" width="1024" height="1024"
+						src="images/pngtree-illustration-of-a-vector-premium-quality-gold-medal-badge-with-isolated-100-satisfaction-guaranteed-sign-on-white-background-in-eps10-format-vector-picture-image_10595160-1024x1024.png"
+						class="attachment-large size-large wp-image-39" alt=""
+						srcset="images/pngtree-illustration-of-a-vector-premium-quality-gold-medal-badge-with-isolated-100-satisfaction-guaranteed-sign-on-white-background-in-eps10-format-vector-picture-image_10595160-1024x1024.png 1024w, images/pngtree-illustration-of-a-vector-premium-quality-gold-medal-badge-with-isolated-100-satisfaction-guaranteed-sign-on-white-background-in-eps10-format-vector-picture-image_10595160-300x300.png 300w, images/pngtree-illustration-of-a-vector-premium-quality-gold-medal-badge-with-isolated-100-satisfaction-guaranteed-sign-on-white-background-in-eps10-format-vector-picture-image_10595160-150x150.png 150w, images/pngtree-illustration-of-a-vector-premium-quality-gold-medal-badge-with-isolated-100-satisfaction-guaranteed-sign-on-white-background-in-eps10-format-vector-picture-image_10595160-768x768.png 768w, images/pngtree-illustration-of-a-vector-premium-quality-gold-medal-badge-with-isolated-100-satisfaction-guaranteed-sign-on-white-background-in-eps10-format-vector-picture-image_10595160.png 1200w"
+						sizes="(max-width: 1024px) 100vw, 1024px">
+				</div>
+				<div class="elementor-element elementor-element-1b5fb81a elementor-widget__width-initial elementor-widget elementor-widget-heading"
+					data-id="1b5fb81a" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">GARANTIE INCONDITIONNELLE</h2>
+				</div>
+				<div class="elementor-element elementor-element-15651568 elementor-widget elementor-widget-text-editor"
+					data-id="15651568" data-element_type="widget" data-widget_type="text-editor.default">
+					<p>Si vous achetez nos recettes et que, pour une raison quelconque, elles ne vous plaisent pas, il
+						vous suffit de nous demander un remboursement dans les 30 jours suivant l’achat, et nous vous
+						rembourserons à 100 %, sans aucune bureaucratie!</p>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-6095dac2 e-flex e-con-boxed e-con e-parent" data-id="6095dac2"
+			data-element_type="container" data-settings="{" background_background":"gradient"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-22bb10c5 e-con-full e-flex e-con e-child"
+					data-id="22bb10c5" data-element_type="container">
+					<div class="elementor-element elementor-element-3fb6d1a elementor-widget__width-initial elementor-widget elementor-widget-heading"
+						data-id="3fb6d1a" data-element_type="widget" data-widget_type="heading.default">
+						<h2 class="elementor-heading-title elementor-size-default">VOICI CE QUE TU OBTIENDRAS</h2>
+					</div>
+					<div class="elementor-element elementor-element-56c776fa elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+						data-id="56c776fa" data-element_type="widget" data-widget_type="icon-list.default">
+						<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+										</path>
+									</svg> </span>
+								<span class="elementor-icon-list-text">700 recettes délicieuses et pratiques.</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+										</path>
+									</svg> </span>
+								<span class="elementor-icon-list-text">Livre numérique 100% en français.</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+										</path>
+									</svg> </span>
+								<span class="elementor-icon-list-text">Recettes sans gluten</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+										</path>
+									</svg> </span>
+								<span class="elementor-icon-list-text">Recettes sans sucre</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+										</path>
+									</svg> </span>
+								<span class="elementor-icon-list-text">Recettes sans lactose</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+										</path>
+									</svg> </span>
+								<span class="elementor-icon-list-text">Recettes pour toutes les occasions de ta
+									journée</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+										</path>
+									</svg> </span>
+								<span class="elementor-icon-list-text">Mode de préparation complet avec des étapes
+									simples à suivre</span>
+							</li>
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+										</path>
+									</svg> </span>
+								<span class="elementor-icon-list-text">Livraison immédiate par e-mail après confirmation
+									de votre paiement</span>
+							</li>
+						</ul>
+					</div>
+					<div class="elementor-element elementor-element-4326a278 elementor-headline--style-highlight elementor-widget elementor-widget-animated-headline"
+						data-id="4326a278" data-element_type="widget" data-settings="{"
+						marker":"x","highlighted_text":"\u20ac=""
+						37,99","headline_style":"highlight","loop":"yes","highlight_animation_duration":1200,"highlight_iteration_delay":8000}"=""
+						data-widget_type="animated-headline.default">
+						<div class="elementor-widget-container">
+							<h3 class="elementor-headline">
+								<span class="elementor-headline-plain-text elementor-headline-text-wrapper">De</span>
+								<span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper">
+									<span class="elementor-headline-dynamic-text elementor-headline-text-active">€
+										37,99</span>
+								</span>
+								<span class="elementor-headline-plain-text elementor-headline-text-wrapper">por
+									solo</span>
+							</h3>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-25e93bd1 elementor-widget elementor-widget-heading"
+						data-id="25e93bd1" data-element_type="widget" data-widget_type="heading.default">
+						<h2 class="elementor-heading-title elementor-size-default">€ 17</h2>
+					</div>
+					<div class="elementor-element elementor-element-509f2977 elementor-align-center pulse elementor-widget elementor-widget-button"
+						data-id="509f2977" data-element_type="widget" data-widget_type="button.default">
+						<a class="elementor-button elementor-button-link elementor-size-sm"
+							href="https://pay.hotmart.com/I96820489B?checkoutMode=10">
+							<span class="elementor-button-content-wrapper">
+								<span class="elementor-button-text">OUI ! JE VEUX LE LIVRE DE CUISINE</span>
+							</span>
+						</a>
+					</div>
+					<div class="elementor-element elementor-element-61951112 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+						data-id="61951112" data-element_type="widget" data-widget_type="icon-list.default">
+						<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+								<span class="elementor-icon-list-icon">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-lock" viewBox="0 0 448 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z">
+										</path>
+									</svg> </span>
+								<span class="elementor-icon-list-text">ACHAT SÉCURISÉ</span>
+							</li>
+						</ul>
+					</div>
+					<div class="elementor-element elementor-element-32278e46 elementor-widget elementor-widget-image"
+						data-id="32278e46" data-element_type="widget" data-widget_type="image.default">
+						<img loading="lazy" decoding="async" width="1024" height="80"
+							src="images/Selo-Menor-Cinza-Claro-1024x80.png"
+							class="attachment-large size-large wp-image-25" alt=""
+							srcset="images/Selo-Menor-Cinza-Claro-1024x80.png 1024w, images/Selo-Menor-Cinza-Claro-300x24.png 300w, images/Selo-Menor-Cinza-Claro-768x60.png 768w, images/Selo-Menor-Cinza-Claro.png 1186w"
+							sizes="(max-width: 1024px) 100vw, 1024px">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-1b1284a7 e-flex e-con-boxed e-con e-parent" data-id="1b1284a7"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-38d88094 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+					data-id="38d88094" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">TA SANTÉ VAUT-ELLE PLUS DE 0,09 $ PAR
+						JOUR ?</h2>
+				</div>
+				<div class="elementor-element elementor-element-5a75e68d elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="5a75e68d" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img loading="lazy" decoding="async" width="281" height="281" src="images/Ellipse-2.svg"
+						class="attachment-large size-large wp-image-17" alt="">
+				</div>
+				<div class="elementor-element elementor-element-5d40259b elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+					data-id="5d40259b" data-element_type="widget" data-settings="{" _position":"absolute"}"=""
+					data-widget_type="image.default">
+					<img decoding="async" width="465" height="465" src="images/Ellipse-1.svg"
+						class="attachment-large size-large wp-image-15" alt="">
+				</div>
+				<div class="elementor-element elementor-element-198df77d elementor-widget elementor-widget-text-editor"
+					data-id="198df77d" data-element_type="widget" data-widget_type="text-editor.default">
+					<p>Si c’est le cas, ne remets pas à plus tard ! En achetant maintenant nos 700 recettes zéro, tu ne
+						paieras que 0,09 $ par jour pour ne plus jamais avoir de restrictions alimentaires ni manger des
+						plats fades et sans saveur.</p>
+				</div>
+				<div class="elementor-element elementor-element-7576e2c0 elementor-align-center pulse elementor-widget elementor-widget-button"
+					data-id="7576e2c0" data-element_type="widget" data-widget_type="button.default">
+					<a class="elementor-button elementor-button-link elementor-size-sm"
+						href="https://pay.hotmart.com/I96820489B?checkoutMode=10">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-text">OUI! JE VEUX LE LIVRE DE CUISINE.</span>
+						</span>
+					</a>
+				</div>
+				<div class="elementor-element elementor-element-cde69a7 elementor-widget elementor-widget-image"
+					data-id="cde69a7" data-element_type="widget" data-widget_type="image.default">
+					<img loading="lazy" decoding="async" width="1024" height="80"
+						src="images/Selo-Menor-Cinza-Claro-1024x80.png" class="attachment-large size-large wp-image-25"
+						alt=""
+						srcset="images/Selo-Menor-Cinza-Claro-1024x80.png 1024w, images/Selo-Menor-Cinza-Claro-300x24.png 300w, images/Selo-Menor-Cinza-Claro-768x60.png 768w, images/Selo-Menor-Cinza-Claro.png 1186w"
+						sizes="(max-width: 1024px) 100vw, 1024px">
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-39980655 e-flex e-con-boxed e-con e-parent" data-id="39980655"
+			data-element_type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2eb16cea e-con-full e-flex e-con e-child"
+					data-id="2eb16cea" data-element_type="container">
+					<div class="elementor-element elementor-element-11166299 elementor-widget elementor-widget-text-editor"
+						data-id="11166299" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="flex-1 overflow-hidden">
+							<div class="h-full">
+								<div class="react-scroll-to-bottom--css-hvimk-79elbk h-full">
+									<div class="react-scroll-to-bottom--css-hvimk-1n7m0yu">
+										<div class="flex flex-col text-sm md:pb-9">
+											<article
+												class="w-full text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]"
+												dir="auto" data-testid="conversation-turn-163"
+												data-scroll-anchor="true">
+												<div
+													class="text-base py-[18px] px-3 md:px-4 m-auto w-full md:px-5 lg:px-4 xl:px-5">
+													<div
+														class="mx-auto flex flex-1 gap-4 text-base md:gap-5 lg:gap-6 md:max-w-3xl">
+														<div
+															class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+															<div class="flex-col gap-1 md:gap-3">
+																<div class="flex max-w-full flex-col flex-grow">
+																	<div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words [.text-message+&]:mt-5"
+																		dir="auto" data-message-author-role="assistant"
+																		data-message-id="8dfeae04-3b3c-4e66-be96-a022b291fee5">
+																		<div
+																			class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+																			<div
+																				class="markdown prose w-full break-words dark:prose-invert light">
+																				<p>Méthodes de paiement</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-7e8817e9 elementor-widget elementor-widget-image"
+						data-id="7e8817e9" data-element_type="widget" data-widget_type="image.default">
+						<img loading="lazy" decoding="async" width="218" height="71" src="images/bandeiras.webp"
+							class="attachment-large size-large wp-image-40" alt="">
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-7bc86760 e-con-full e-flex e-con e-child"
+					data-id="7bc86760" data-element_type="container">
+					<div class="elementor-element elementor-element-3860328b elementor-widget elementor-widget-text-editor"
+						data-id="3860328b" data-element_type="widget" data-widget_type="text-editor.default">
+						<p>Site web 100% sécurisé</p>
+					</div>
+					<div class="elementor-element elementor-element-583149ee elementor-widget elementor-widget-image"
+						data-id="583149ee" data-element_type="widget" data-widget_type="image.default">
+						<img loading="lazy" decoding="async" width="218" height="71" src="images/selosdeseguranca.webp"
+							class="attachment-large size-large wp-image-41" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-6aa122b1 e-flex e-con-boxed e-con e-parent" data-id="6aa122b1"
+			data-element_type="container">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2e8cdc1f elementor-widget__width-initial elementor-widget elementor-widget-heading"
+					data-id="2e8cdc1f" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">Toutes les informations et concepts
+						utilisés ici sont uniquement destinés à informer et éduquer. Ce site web et le produit 700
+						Recettes ZÉRO sont mis à disposition dans ce but et ne sont pas destinés à remplacer une
+						ordonnance médicale. Aucune information sur ce site web et dans le produit 700 Recettes ZÉRO ne
+						remplace une consultation avec votre médecin, nutritionniste ou professionnel de santé.
+						Consultez toujours un professionnel de santé avant de commencer tout changement dans votre
+						régime alimentaire, y compris l'utilisation des recettes de ce produit. Pour plus
+						d'informations, consultez nos Conditions d'utilisation et notre Politique de confidentialité
+						ici. Si, pour une raison quelconque, le matériel ne vous plaît pas ou si vous pensez qu'il ne
+						vous convient pas, ne vous inquiétez pas, vous bénéficiez d'une garantie de 7 jours ouvrables à
+						compter de la date de livraison. Pour plus d'informations, contactez-nous à :
+						suporteproductosdigitales@gmail.com</h2>
+				</div>
+				<div class="elementor-element elementor-element-62880075 elementor-widget__width-initial elementor-widget elementor-widget-heading"
+					data-id="62880075" data-element_type="widget" data-widget_type="heading.default">
+					<h2 class="elementor-heading-title elementor-size-default">© DROITS D'AUTEUR 2023 | 700 RECETTES
+						ZÉRO – TOUS DROITS RÉSERVÉS.</h2>
+				</div>
+				<div class="elementor-element elementor-element-61095980 elementor-widget elementor-widget-html"
+					data-id="61095980" data-element_type="widget" data-widget_type="html.default">
+					<style>
+						html,
+						body {
+							max-width: 100%;
+							overflow-x: hidden;
+						}
+
+						::-webkit-scrollbar {
+							width: 8px;
+						}
+
+						::-webkit-scrollbar-track {
+							background: #ffffff;
+						}
+
+						::-webkit-scrollbar-thumb {
+							border: 2px solid white;
+							-webkit-border-radius: 3px;
+							border-radius: 3px;
+							background: linear-gradient(180deg, #E12421, #BBD02A);
+						}
+
+						::-webkit-scrollbar-thumb:hover {
+							border: 2px solid white;
+							-webkit-border-radius: 3px;
+							border-radius: 3px;
+							background: linear-gradient(0deg, #E12421, #BBD02A);
+						}
+					</style>
+
+					<script>
+						let imageUrl = "/wp-content/uploads/2023/03/foguinho.gif";
+						setTimeout(function () {
+							document.getElementsByClassName("elementor-progress-bar")[0].insertAdjacentHTML('beforeend', `<img decoding="async" src="${imageUrl}" class="elementor-progress-bar-image" />`
+							);
+
+						}, 100);
+					</script>
+
+				</div>
+			</div>
+		</div>
+		<div class="elementor-element elementor-element-106d4464 e-flex e-con-boxed e-con e-parent" data-id="106d4464"
+			data-element_type="container" data-settings="{" background_background":"classic"}"="">
+			<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5fa87718 elementor-widget elementor-widget-html"
+					data-id="5fa87718" data-element_type="widget" data-widget_type="html.default">
+				</div>
+				<div class="elementor-element elementor-element-628daa7a elementor-widget elementor-widget-html"
+					data-id="628daa7a" data-element_type="widget" data-widget_type="html.default">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/twentytwentyfive\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+	<script>
+		const lazyloadRunObserver = () => {
+			const lazyloadBackgrounds = document.querySelectorAll(`.e-con.e-parent:not(.e-lazyloaded)`);
+			const lazyloadBackgroundObserver = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						let lazyloadBackground = entry.target;
+						if (lazyloadBackground) {
+							lazyloadBackground.classList.add('e-lazyloaded');
+						}
+						lazyloadBackgroundObserver.unobserve(entry.target);
+					}
+				});
+			}, { rootMargin: '200px 0px 200px 0px' });
+			lazyloadBackgrounds.forEach((lazyloadBackground) => {
+				lazyloadBackgroundObserver.observe(lazyloadBackground);
+			});
+		};
+		const events = [
+			'DOMContentLoaded',
+			'elementor/lazyload/observe',
+		];
+		events.forEach((event) => {
+			document.addEventListener(event, lazyloadRunObserver);
+		});
+	</script>
+	<script id="wp-block-template-skip-link-js-after">
+		(function () {
+			var skipLinkTarget = document.querySelector('main'),
+				sibling,
+				skipLinkTargetID,
+				skipLink;
+
+			// Early exit if a skip-link target can't be located.
+			if (!skipLinkTarget) {
+				return;
+			}
+
+			/*
+			 * Get the site wrapper.
+			 * The skip-link will be injected in the beginning of it.
+			 */
+			sibling = document.querySelector('.wp-site-blocks');
+
+			// Early exit if the root element was not found.
+			if (!sibling) {
+				return;
+			}
+
+			// Get the skip-link target's ID, and generate one if it doesn't exist.
+			skipLinkTargetID = skipLinkTarget.id;
+			if (!skipLinkTargetID) {
+				skipLinkTargetID = 'wp--skip-link--target';
+				skipLinkTarget.id = skipLinkTargetID;
+			}
+
+			// Create the skip link.
+			skipLink = document.createElement('a');
+			skipLink.classList.add('skip-link', 'screen-reader-text');
+			skipLink.id = 'wp-skip-link';
+			skipLink.href = '#' + skipLinkTargetID;
+			skipLink.innerText = 'Pular para o conteúdo';
+
+			// Inject the skip link.
+			sibling.parentElement.insertBefore(skipLink, sibling);
+		}());
+
+	</script>
+	<script id="hostinger-reach-subscription-block-view-js-extra">
+		var hostinger_reach_subscription_block_data = { "endpoint": "#", "nonce": "79ecb079e9", "translations": { "thanks": "Obrigado por ser um assinante!", "error": "Ocorreu um erro. Tente novamente." } };
+	</script>
+	<script src="js/subscription-view.js" id="hostinger-reach-subscription-block-view-js"></script>
+	<script src="js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+	<script src="js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+	<script src="js/core.min.js" id="jquery-ui-core-js"></script>
+	<script id="elementor-frontend-js-before">
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Compartilhar no Facebook", "shareOnTwitter": "Compartilhar no Twitter", "pinIt": "Fixar", "download": "Baixar", "downloadImage": "Baixar imagem", "fullscreen": "Tela cheia", "zoom": "Zoom", "share": "Compartilhar", "playVideo": "Reproduzir v\u00eddeo", "previous": "Anterior", "next": "Pr\u00f3ximo", "close": "Fechar", "a11yCarouselPrevSlideMessage": "Slide anterior", "a11yCarouselNextSlideMessage": "Pr\u00f3ximo slide", "a11yCarouselFirstSlideMessage": "Este \u00e9 o primeiro slide", "a11yCarouselLastSlideMessage": "Este \u00e9 o \u00faltimo slide", "a11yCarouselPaginationBulletMessage": "Ir para o slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Dispositivos m\u00f3veis no modo retrato", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Dispositivos m\u00f3veis no modo paisagem", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet no modo retrato", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet no modo paisagem", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Notebook", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Tela ampla (widescreen)", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } }, "hasCustomBreakpoints": false }, "version": "3.33.4", "is_static": false, "experimentalFeatures": { "e_font_icon_svg": true, "additional_custom_breakpoints": true, "container": true, "e_optimized_markup": true, "theme_builder_v2": true, "nested-elements": true, "home_screen": true, "global_classes_should_enforce_capabilities": true, "e_variables": true, "cloud-library": true, "e_opt_in_v4_page": true, "import-export-customization": true, "display-conditions": true, "form-submissions": true }, "urls": { "assets": "assets\/", "ajaxurl": "#", "uploadUrl": "images\/" }, "nonces": { "floatingButtonsClickTracking": "7e769db8f3" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 7, "title": "700%20Zero%20Recettes", "excerpt": "", "featuredImage": false } };
+	</script>
+	<script src="js/frontend.min.js" id="elementor-frontend-js"></script>
+	<script src="js/jquery-numerator.min.js" id="jquery-numerator-js"></script>
+	<script src="js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+	<script src="js/hooks.min.js" id="wp-hooks-js"></script>
+	<script src="js/i18n.min.js" id="wp-i18n-js"></script>
+	<script id="wp-i18n-js-after">
+		wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+	</script>
+	<script id="elementor-pro-frontend-js-before">
+		var ElementorProFrontendConfig = { "ajaxurl": "#", "nonce": "83eaa4350f", "urls": { "assets": "assets\/", "rest": "#" }, "settings": { "lazy_load_background_images": true }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" }, "x-twitter": { "title": "X" }, "threads": { "title": "Threads" } }, "facebook_sdk": { "lang": "pt_BR", "app_id": "" }, "lottie": { "defaultAnimationUrl": "#" } };
+	</script>
+	<script src="js/frontend.min_1.js" id="elementor-pro-frontend-js"></script>
+	<script src="js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+
+
+
+
+</body>
+
+</html><!-- Page cached by LiteSpeed Cache 7.6.2 on 2026-01-08 06:52:29 -->
