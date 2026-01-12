@@ -1928,6 +1928,85 @@
 					<p><strong><span style="color: #000000;">Notre livre est un succès parmi les professionnels du
 								secteur et le grand public. Voici quelques témoignages:</span></strong></p>
 				</div>
+				<div class="elementor-element elementor-element-depo-carousel elementor-widget elementor-widget-html"
+					data-id="depo-carousel" data-element_type="widget" data-widget_type="html.default">
+					<div class="elementor-widget-container">
+						<style>
+							.depo-carousel-container {
+								width: 100%;
+								padding: 40px 0;
+								overflow: hidden;
+								position: relative;
+							}
+
+							.depo-carousel-wrapper {
+								display: flex;
+								width: max-content;
+								animation: depo-scroll 30s linear infinite;
+							}
+
+							.depo-carousel-wrapper:hover {
+								animation-play-state: paused;
+							}
+
+							.depo-carousel-slide {
+								width: 300px;
+								margin-right: 20px;
+								flex-shrink: 0;
+								border-radius: 12px;
+								overflow: hidden;
+								box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+								background: #fff;
+							}
+
+							.depo-carousel-slide img {
+								width: 100%;
+								height: auto;
+								display: block;
+							}
+
+							@keyframes depo-scroll {
+								0% {
+									transform: translateX(0);
+								}
+
+								100% {
+									transform: translateX(calc(-320px * 4));
+								}
+							}
+						</style>
+						<div class="depo-carousel-container">
+							<div class="depo-carousel-wrapper">
+								<!-- Original Images -->
+								<div class="depo-carousel-slide">
+									<img src="depoimentos/depo1.webp" loading="lazy" alt="Témoignage Client">
+								</div>
+								<div class="depo-carousel-slide">
+									<img src="depoimentos/depo2.webp" loading="lazy" alt="Témoignage Client">
+								</div>
+								<div class="depo-carousel-slide">
+									<img src="depoimentos/depo3.webp" loading="lazy" alt="Témoignage Client">
+								</div>
+								<div class="depo-carousel-slide">
+									<img src="depoimentos/depo4.webp" loading="lazy" alt="Témoignage Client">
+								</div>
+								<!-- Duplicates for Infinite Loop -->
+								<div class="depo-carousel-slide">
+									<img src="depoimentos/depo1.webp" loading="lazy" alt="Témoignage Client">
+								</div>
+								<div class="depo-carousel-slide">
+									<img src="depoimentos/depo2.webp" loading="lazy" alt="Témoignage Client">
+								</div>
+								<div class="depo-carousel-slide">
+									<img src="depoimentos/depo3.webp" loading="lazy" alt="Témoignage Client">
+								</div>
+								<div class="depo-carousel-slide">
+									<img src="depoimentos/depo4.webp" loading="lazy" alt="Témoignage Client">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="elementor-element elementor-element-7dc530b4 e-flex e-con-boxed e-con e-child"
 					data-id="7dc530b4" data-element_type="container">
 					<div class="e-con-inner">
