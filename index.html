@@ -4312,10 +4312,11 @@
 			<!-- Dynamic Date Script -->
 			<script>
 				document.addEventListener('DOMContentLoaded', () => {
-					// Get today's date
+					// Get today's date in France
 					const today = new Date();
-					const day = String(today.getDate()).padStart(2, '0');
-					const month = String(today.getMonth() + 1).padStart(2, '0');
+					const franceDate = new Date(today.toLocaleString('en-US', { timeZone: 'Europe/Paris' }));
+					const day = String(franceDate.getDate()).padStart(2, '0');
+					const month = String(franceDate.getMonth() + 1).padStart(2, '0');
 					const dateString = `${day}/${month}`;
 
 					// IDs to update
