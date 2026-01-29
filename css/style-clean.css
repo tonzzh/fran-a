@@ -88,11 +88,28 @@ a {
     padding: 60px 0;
 }
 
+/* Top Notification Bar */
+.top-notification-bar {
+    background-color: #8B0000;
+    /* Dark Red */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.top-notification-bar p {
+    margin: 0;
+}
+
 /* Hero Section */
 .hero {
     background-image: var(--gradient-hero);
     color: var(--color-white);
-    padding: 80px 0 160px;
+    padding: 40px 0 160px;
+    /* Reduced top padding from 80px */
     /* Extra padding for shape divider */
     position: relative;
     text-align: center;
