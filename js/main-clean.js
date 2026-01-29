@@ -101,4 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         observer.observe(statsSection);
     }
+    // Dynamic Date for Top Bar (France Time Zone)
+    const dateElement = document.getElementById('current-date');
+    if (dateElement) {
+        const franceDate = new Date().toLocaleDateString('fr-FR', {
+            timeZone: 'Europe/Paris',
+            day: '2-digit',
+            month: '2-digit'
+        });
+        dateElement.innerText = franceDate; // Formats as DD/MM automatically
+    }
 });
