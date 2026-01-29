@@ -107,7 +107,8 @@ a {
 }
 
 .text-highlight {
-    color: #ff00ff;
+    color: #AA00FF;
+    /* Darker magenta for contrast */
 }
 
 .hero-image {
@@ -468,7 +469,8 @@ a {
 }
 
 .countdown-item {
-    background: #FF2D6C;
+    background: #D81B60;
+    /* Darker pink for better white text contrast */
     color: white;
     padding: 15px;
     border-radius: 8px;
@@ -485,7 +487,9 @@ a {
 
 .countdown-item .label {
     font-size: 10px;
-    opacity: 0.9;
+    opacity: 1;
+    /* Full opacity */
+    font-weight: 700;
 }
 
 .product-display {
@@ -509,7 +513,7 @@ a {
 
 .strikethrough {
     text-decoration: line-through;
-    color: #FF2D6C;
+    color: #D81B60;
 }
 
 .offer-text {
@@ -520,7 +524,8 @@ a {
 .new-price {
     font-family: var(--font-primary);
     font-size: 80px;
-    color: #61CE70;
+    color: #2E7D32;
+    /* Darker green for AA compliance */
     line-height: 1;
     margin: 10px 0 30px;
 }
@@ -1002,7 +1007,8 @@ a {
 
 .strikethrough-red {
     text-decoration: line-through;
-    color: #ff0000;
+    color: #D32F2F;
+    /* Darker red */
     font-weight: 800;
     font-size: 1.5rem;
 }
@@ -1024,7 +1030,8 @@ a {
 .offer-badge {
     background: #ffeb3b;
     /* Yellow warning */
-    color: #d32f2f;
+    color: #B71C1C;
+    /* Darker red text for contrast */
     font-weight: 800;
     display: inline-block;
     padding: 5px 15px;
@@ -1057,7 +1064,8 @@ a {
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #777;
+    color: #555;
+    /* Darker gray */
 }
 
 .price-display {
