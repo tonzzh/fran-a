@@ -108,11 +108,23 @@ a {
 .hero {
     background-image: var(--gradient-hero);
     color: var(--color-white);
-    padding: 40px 0 160px;
-    /* Reduced top padding from 80px */
+    padding: 20px 0 160px;
+    /* Reduced top padding */
     /* Extra padding for shape divider */
     position: relative;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 5px;
+        /* Extremely tight on mobile */
+    }
+
+    .hero-text {
+        margin-bottom: 10px;
+        /* Tighter text margin on mobile */
+    }
 }
 
 .hero-text {
@@ -120,7 +132,8 @@ a {
     font-weight: 700;
     line-height: 1.4;
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin: 0 auto 15px;
+    /* Reduced from 40px */
 }
 
 .text-highlight {
