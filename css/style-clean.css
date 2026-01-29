@@ -1,0 +1,1239 @@
+:root {
+    /* Fonts */
+    --font-primary: 'Playfair Display', serif;
+    --font-secondary: 'Manrope', sans-serif;
+    --font-text: 'Manrope', sans-serif;
+
+    /* Colors */
+    --color-base: #F9F7F2;
+    /* Cream Background */
+    --color-contrast: #2C3333;
+    /* Dark Charcoal Text */
+    --color-primary: #264D3B;
+    /* Deep Forest Green */
+    --color-accent: #C05621;
+    /* Terracotta */
+    --color-secondary: #A4B494;
+    /* Sage */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-purple-dark: #603B78;
+    /* Extracted from Benefits Headers */
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, #1A0052 0%, #EC318B 100%);
+
+    /* Spacing */
+    --spacing-container: 1140px;
+    --spacing-gutter: 20px;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-base);
+    color: var(--color-contrast);
+    font-family: var(--font-secondary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+    /* Most headers use Manrope/Poppins */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Utilities */
+.container {
+    max-width: var(--spacing-container);
+    margin: 0 auto;
+    padding: 0 var(--spacing-gutter);
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-spacing {
+    padding: 60px 0;
+}
+
+/* Hero Section */
+.hero {
+    background-image: var(--gradient-hero);
+    color: var(--color-white);
+    padding: 80px 0 160px;
+    /* Extra padding for shape divider */
+    position: relative;
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.text-highlight {
+    color: #ff00ff;
+}
+
+.hero-image {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.shape-divider-bottom {
+    position: absolute;
+    bottom: -1px;
+    /* Fix sub-pixel gaps */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-divider-bottom svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.elementor-shape-fill {
+    fill: var(--color-base);
+}
+
+/* Benefits Section */
+.intro h2 {
+    color: var(--color-purple-dark);
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.benefit-card {
+    background-color: #ffffff;
+    background-image: url('../images/bg-check.webp');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border-radius: 0 25px 25px 25px;
+    /* specific radius from original */
+    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 1);
+    /* from original box-shadow:0px 0px 11px 0px #000000; */
+    border-top: 4px solid #7A8595;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefit-card h3 {
+    color: var(--color-purple-dark);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .benefit-card {
+        padding: 30px;
+    }
+}
+
+/* Food Categories Section */
+.food-categories {
+    background-color: #424085;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 300px;
+}
+
+.shape-divider-top {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape-divider-top svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.deco-shape {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.shape-1 {
+    top: 10%;
+    right: 10%;
+    width: 150px;
+}
+
+.shape-2 {
+    top: 25%;
+    left: 5%;
+    width: 100px;
+}
+
+.shape-3 {
+    bottom: 15%;
+    right: 8%;
+    width: 120px;
+}
+
+.shape-4 {
+    bottom: 30%;
+    left: 12%;
+    width: 180px;
+}
+
+.shape-5 {
+    top: 50%;
+    right: 2%;
+    width: 90px;
+}
+
+.categories-intro {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 60px;
+}
+
+.categories-intro h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.food-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.food-card {
+    display: flex;
+    background-image: linear-gradient(180deg, #9375E7 32%, #FFFFFF 60%);
+    border-radius: 0 25px 25px 25px;
+    box-shadow: 0 0 10px 0 #FFFFFF;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+}
+
+.food-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.food-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.food-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.food-content h3 {
+    color: #3F3989;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.food-content p {
+    color: #050E76;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Alternating Layout */
+.food-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .food-categories {
+        padding-bottom: 150px;
+    }
+
+    .food-card,
+    .food-card:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .food-image {
+        max-width: 100%;
+        height: 250px;
+    }
+
+    .food-content {
+        padding: 30px;
+    }
+}
+
+/* Cake Carousel */
+.cake-carousel {
+    background-color: #f5f1eb;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 45s linear infinite;
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.carousel-slide {
+    width: 250px;
+    height: 300px;
+    margin-right: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 14));
+    }
+
+    /* Adjusted approximate width */
+}
+
+/* Checklist Section */
+.features-checklist {
+    background-color: var(--color-base);
+}
+
+.checklist-inline {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.checklist-inline li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-contrast);
+}
+
+.icon-check {
+    color: #ffffff;
+    background-color: #61CE70;
+    /* Green check circle */
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Offer Section */
+.offer-section {
+    background-color: #f5f1eb;
+    /* Use base or cream? Check original. */
+    /* Original seemed to have classic background images or white. */
+    /* post-7.css line 2467: background_background:Classic. elementor-element-33478492 */
+    /* Looks like cream/white. */
+    position: relative;
+    overflow: hidden;
+}
+
+.text-purple-dark {
+    color: #603B78;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.countdown-wrapper {
+    margin: 40px 0;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.countdown-item {
+    background: #FF2D6C;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 90px;
+    text-align: center;
+}
+
+.countdown-item .number {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.countdown-item .label {
+    font-size: 10px;
+    opacity: 0.9;
+}
+
+.product-display {
+    margin: 40px 0;
+}
+
+.product-image {
+    max-width: 300px;
+    margin: 0 auto 20px;
+}
+
+.price-box {
+    margin-top: 20px;
+}
+
+.old-price {
+    font-size: 20px;
+    color: #54595F;
+    font-weight: 600;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #FF2D6C;
+}
+
+.offer-text {
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.new-price {
+    font-family: var(--font-primary);
+    font-size: 80px;
+    color: #61CE70;
+    line-height: 1;
+    margin: 10px 0 30px;
+}
+
+.cta-button-wrapper {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+.btn-cta {
+    background-color: #C05621;
+    /* Terracotta from source */
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cta:hover {
+    background-color: #A3461B;
+    /* Darker orange from source */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(192, 86, 33, 0.3);
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(192, 86, 33, 0.7);
+        /* Orange shadow */
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(192, 86, 33, 0);
+        /* Orange shadow */
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(192, 86, 33, 0);
+    }
+}
+
+.payment-methods {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: var(--color-base);
+}
+
+.rating-display {
+    margin: 30px 0;
+}
+
+.rating-number {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--color-contrast);
+}
+
+.stars {
+    color: #FFC107;
+    /* Star yellow */
+    font-size: 24px;
+}
+
+.review-count {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+.badge-image {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Depo Carousel */
+.depo-carousel-container {
+    width: 100%;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.depo-carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+    /* Slower animation for 3 sets */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-33.333%);
+        /* Move 1/3 of total width (1 set) */
+    }
+}
+
+.depo-slide {
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.depo-slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Reviews Grid */
+.reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-align: left;
+}
+
+.review-content {
+    padding: 30px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.reviewer-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-meta h4 {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: var(--color-contrast);
+}
+
+.review-divider {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 15px 0;
+}
+
+.review-content h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.review-content p {
+    font-style: italic;
+    color: #666;
+}
+
+/* Guarantee */
+.guarantee-section {
+    background-color: #ffffff;
+}
+
+.max-w-800 {
+    max-width: 800px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Bonus Section */
+.bonus-section {
+    background-color: #2C3333;
+    color: #ffffff;
+    padding-bottom: 60px;
+    /* Add space at bottom */
+}
+
+.bonus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    /* Increase gap */
+    margin-top: 50px;
+    margin-bottom: 60px;
+    /* Ensure space before button */
+}
+
+.bonus-card {
+    background-color: #384242;
+    border: 2px solid #FF00FF;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Uniform height */
+}
+
+.bonus-title {
+    color: #00FFFF;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.bonus-image-wrapper {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.bonus-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    min-height: 3em;
+    /* Align text start */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bonus-desc {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    /* Push price down */
+}
+
+/* Stats Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.stat-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Symptoms Section */
+.symptoms-section {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F3E5F5 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.symptoms-section .container {
+    max-width: 800px;
+}
+
+.symptoms-section h2 {
+    color: var(--color-purple-dark);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.symptoms-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--color-contrast);
+}
+
+.symptoms-section strong {
+    color: var(--color-purple-dark);
+}
+
+
+.stat-number {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-accent);
+    /* Terracotta or use #61CE70 green? Original used white text on blue/pink? Checking.. */
+    /* Original used Elementor counter. Number color usually primary/accent. */
+    /* In post-7.css .elementor-counter-number-wrapper { color: #FFFFFF... } but inside a blue/purple box? */
+    /* Actually the section background was gradient. */
+    /* I'll use my accent color or Primary. */
+    color: #C05621;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.max-w-900 {
+    max-width: 900px;
+}
+
+/* Price Recap Section */
+.price-recap {
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+    /* Contain shapes */
+}
+
+.price-recap .container {
+    position: relative;
+    z-index: 2;
+    /* Text above content */
+}
+
+.shape-recap-1 {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 300px;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.price-recap p {
+    margin-bottom: 40px;
+    /* Force space below text */
+    position: relative;
+    z-index: 2;
+}
+
+.price-recap .cta-button-wrapper {
+    margin-top: 30px;
+    display: inline-block;
+    /* Ensure block formatting context for margins */
+    position: relative;
+    z-index: 5;
+}
+
+/* Pricing Stack Section */
+.pricing-stack-section {
+    background: linear-gradient(135deg, #f8b4d9 0%, #ff8ec3 100%);
+    /* Pink gradient similar to image */
+    padding: 80px 0;
+}
+
+.pricing-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    /* Cards touch or overlap */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Common Card Styles */
+.pricing-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Left Card: Value Stack */
+.value-stack {
+    flex: 1;
+    max-width: 450px;
+    background: #fff9fc;
+    /* Very light pink/cream */
+    border: 2px dashed #ff8ec3;
+    z-index: 1;
+    /* Simulate the 'ticket' look */
+    margin-right: -20px;
+    /* Slight overlap */
+    padding-right: 40px;
+}
+
+.stack-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.stack-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stack-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #444;
+    font-weight: 600;
+    line-height: 1.4;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 8px;
+}
+
+.stack-list li:last-child {
+    border-bottom: none;
+}
+
+.stack-list .icon-check {
+    background-color: #61CE70;
+    color: #fff;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.stack-total {
+    margin-top: 20px;
+    text-align: center;
+    background: #ffe6f2;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.stack-total p {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.strikethrough-red {
+    text-decoration: line-through;
+    color: #ff0000;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+/* Right Card: Main Offer */
+.main-offer {
+    flex: 1.2;
+    max-width: 500px;
+    z-index: 2;
+    /* On top */
+    text-align: center;
+    border: 3px solid #61CE70;
+    /* Green border or white? Image has dashed red.. keeping clean */
+    padding: 40px 30px;
+    transform: scale(1.05);
+    /* Make it pop */
+}
+
+.offer-badge {
+    background: #ffeb3b;
+    /* Yellow warning */
+    color: #d32f2f;
+    font-weight: 800;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.offer-headline {
+    color: #e91e63;
+    /* Pink/Red headline */
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.access-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 10px 0 20px;
+}
+
+.final-price-box {
+    margin: 20px 0;
+}
+
+.small-text {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+.price-display {
+    color: #0277bd;
+    /* Blue price like image */
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.price-display .currency {
+    font-size: 3rem;
+    margin-top: -10px;
+}
+
+.price-display .amount {
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.btn-cta {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.payment-icons-row {
+    margin-top: 20px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    /* Center the image */
+}
+
+/* Responsive Stack */
+@media (max-width: 900px) {
+    .pricing-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .value-stack {
+        margin-right: 0;
+        padding-right: 30px;
+        /* Reset padding */
+        width: 100%;
+    }
+
+    .main-offer {
+        width: 100%;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cols on mobile seems fine for small items, or 1? */
+        gap: 15px;
+    }
+
+    .offer-content h2 {
+        font-size: 24px;
+    }
+
+    .new-price {
+        font-size: 60px;
+    }
+
+    .bonus-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .rating-number {
+        font-size: 40px;
+    }
+
+    .reviews-grid {
+        flex-direction: column;
+    }
+
+    .review-card {
+        max-width: 100%;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Button Mobile Fixes */
+    .btn-cta {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px;
+        font-size: 16px;
+        line-height: 1.3;
+        white-space: normal;
+        text-align: center;
+        height: auto;
+    }
+
+    .cta-button-wrapper {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        margin-top: 30px !important;
+        /* Ensure spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .food-grid {
+        grid-template-columns: 1fr;
+        /* 1 col for very small screens */
+    }
+
+    .countdown-item {
+        min-width: 60px;
+        padding: 10px;
+    }
+
+    .countdown-item .number {
+        font-size: 20px;
+    }
+}
+
+.bonus-price {
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.disclaimer-text {
+    line-height: 1.6;
+}
+
+.footer-badges img {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        max-width: 100%;
+    }
+
+    .reviews-grid {
+        flex-direction: column;
+    }
+
+    .rating-number {
+        font-size: 40px;
+    }
+}
