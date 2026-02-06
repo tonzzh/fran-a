@@ -1201,6 +1201,90 @@
             .rating-number {
                 font-size: 40px
             }
+
+            .rating-number {
+                font-size: 40px
+            }
+        }
+
+        /* Sticky CTA Styles */
+        .sticky-cta-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            padding: 15px;
+            display: none;
+            /* Hidden by default, shown on mobile via media query */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-sticky {
+            width: 100%;
+            background-color: #2E7D32;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 800;
+            font-size: 18px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            animation: pulse-green 2s infinite;
+        }
+
+        @keyframes pulse-green {
+            0% {
+                box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(46, 125, 50, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(46, 125, 50, 0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sticky-cta-container {
+                display: flex;
+            }
+
+            body {
+                padding-bottom: 80px;
+                /* Prevent footer from being hidden */
+            }
+        }
+
+        /* Compact Countdown Styles for Main Offer Card */
+        .compacted-countdown .countdown {
+            gap: 5px;
+            margin: 10px 0;
+        }
+
+        .compacted-countdown .countdown-item {
+            padding: 5px;
+            min-width: 50px;
+            background: #f5f5f5;
+            /* Lighter background for inside card */
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .compacted-countdown .countdown-item .number {
+            font-size: 18px;
+            color: #D81B60;
+        }
+
+        .compacted-countdown .countdown-item .label {
+            font-size: 8px;
+            color: #666;
         }
     </style>
     <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
@@ -1306,7 +1390,7 @@
                 <div class="food-grid">
                     <!-- 1 -->
                     <div class="food-card">
-                        <div class="food-image"><img src="images/imagem-1.webp" alt="Petit Déjeuner" loading="lazy">
+                        <div class="food-image"><img src="images/image-1.avif" alt="Petit Déjeuner" loading="lazy">
                         </div>
                         <div class="food-content">
                             <h3>PETITS DÉJEUNERS ET COLLATIONS</h3>
@@ -1322,11 +1406,11 @@
                                 occasions spéciales ! Préparés avec des ingrédients que vous avez chez vous, ils
                                 n’affecteront pas votre taux de sucre dans le sang.</p>
                         </div>
-                        <div class="food-image"><img src="images/image-2.webp" alt="Déjeuner" loading="lazy"></div>
+                        <div class="food-image"><img src="images/image-2.avif" alt="Déjeuner" loading="lazy"></div>
                     </div>
                     <!-- 3 -->
                     <div class="food-card">
-                        <div class="food-image"><img src="images/image-4.webp" alt="Desserts" loading="lazy"></div>
+                        <div class="food-image"><img src="images/image-4.avif" alt="Desserts" loading="lazy"></div>
                         <div class="food-content">
                             <h3>DESSERTS ET GOURMANDISES.</h3>
                             <p>De nombreuses options de desserts et gourmandises sans gluten et sans sucre pour que
@@ -1387,45 +1471,7 @@
             </div>
         </section>
 
-        <!-- INTERMEDIATE CTA SECTION -->
-        <section class="offer-section section-spacing text-center">
-            <div class="container">
-                <h2 class="text-purple-dark text-uppercase">NE MANQUEZ PAS CETTE OPPORTUNITÉ !</h2>
-                <p class="max-w-800 mx-auto">Seulement pour aujourd’hui, vous pouvez l’acquérir avec <strong
-                        class="text-highlight">50% DE RÉDUCTION</strong>, soit un paiement unique de <strong
-                        class="text-highlight">€ 12,00</strong> avec un accès immédiat.</p>
-                <h2 class="text-purple-dark mt-4">Plus de 50% de réduction</h2>
 
-                <div class="countdown-wrapper">
-                    <div class="countdown" id="countdown-cta">
-                        <div class="countdown-item"><span class="number" id="days-1">00</span><span
-                                class="label">JOURS</span></div>
-                        <div class="countdown-item"><span class="number" id="hours-1">00</span><span
-                                class="label">HEURES</span></div>
-                        <div class="countdown-item"><span class="number" id="minutes-1">00</span><span
-                                class="label">MINUTES</span></div>
-                        <div class="countdown-item"><span class="number" id="seconds-1">00</span><span
-                                class="label">SECONDES</span></div>
-                    </div>
-                </div>
-
-                <div class="price-box">
-                    <div class="old-price">PRIX NORMAL: <span class="strikethrough">€ 37,99</span></div>
-                    <div class="offer-text text-purple-dark">OFFRE UNIQUEMENT AUJOURD'HUI À :</div>
-                    <div class="new-price">€ 12</div>
-                </div>
-
-                <div class="cta-button-wrapper">
-                    <a href="https://pay.hotmart.com/M103812775Q?checkoutMode=10"
-                        class="btn-cta text-white pulse-animation">OUI ! JE VEUX LE LIVRE DE CUISINE</a>
-                </div>
-
-                <div class="payment-icons-row" style="display: flex; justify-content: center;">
-                    <img src="images/Selo-Menor-Cinza-Claro-1024x80.png" alt="Payment Methods"
-                        class="payment-icons mx-auto" width="600" height="auto" loading="lazy">
-                </div>
-            </div>
-        </section>
 
         <!-- TESTIMONIALS -->
         <section class="testimonials-section section-spacing text-center">
@@ -1682,6 +1728,22 @@
                         <div class="offer-badge">🔥 OFFRE SPÉCIALE</div>
                         <h2 class="offer-headline">700 RECETTES<br>ZÉRO SUCRE<br>ET SANS GLUTEN</h2>
                         <div class="stars text-yellow">⭐⭐⭐⭐⭐</div>
+
+                        <!-- Moved Countdown -->
+                        <div class="countdown-wrapper compacted-countdown">
+                            <p class="text-sm font-bold mb-2">L'OFFRE EXPIRE DANS:</p>
+                            <div class="countdown" id="countdown-cta">
+                                <div class="countdown-item"><span class="number" id="days-1">00</span><span
+                                        class="label">J</span></div>
+                                <div class="countdown-item"><span class="number" id="hours-1">00</span><span
+                                        class="label">H</span></div>
+                                <div class="countdown-item"><span class="number" id="minutes-1">00</span><span
+                                        class="label">M</span></div>
+                                <div class="countdown-item"><span class="number" id="seconds-1">00</span><span
+                                        class="label">S</span></div>
+                            </div>
+                        </div>
+
                         <p class="access-text">ACCÈS À VIE<br>(paiement unique, sans mensualités)</p>
 
                         <div class="final-price-box">
@@ -1750,6 +1812,13 @@
     </footer>
 
     <script src="js/main-clean.js"></script>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky-cta-container">
+        <a href="https://pay.hotmart.com/M103812775Q?checkoutMode=10" class="btn-sticky">
+            JE VEUX PROFITER DE L'OFFRE !
+        </a>
+    </div>
 </body>
 
 </html>
